@@ -74,6 +74,13 @@ export type CvProject = {
 
 export type CvDocument = {
   title: string;
+  candidateName?: string;
+  targetRole?: string;
+  location?: string;
+  phone?: string;
+  email?: string;
+  linkedin?: string;
+  portfolio?: string;
   contact: string;
   summary: string;
   skills: string[];

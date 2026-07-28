@@ -57,6 +57,13 @@ Template style: ${template}
 Return valid JSON with this exact shape:
 {
   "title": "",
+  "candidateName": "",
+  "targetRole": "",
+  "location": "",
+  "phone": "",
+  "email": "",
+  "linkedin": "",
+  "portfolio": "",
   "contact": "",
   "summary": "",
   "skills": [],

@@ -25,6 +25,23 @@ export async function POST(request: NextRequest) {
       await logAiRequest(user.id, "job-specific-cv", geminiModel(), false, error instanceof Error ? error.message : "AI failed");
     }
 
+    cv = {
+      ...cv,
+      candidateName: profile.personalDetails.fullName || cv.candidateName,
+      targetRole: body.jobTitle || profile.targetRoles[0] || cv.targetRole,
+      location: profile.personalDetails.location || cv.location,
+      phone: profile.personalDetails.phone || cv.phone,
+      email: profile.personalDetails.email || cv.email,
+      linkedin: profile.personalDetails.linkedin || cv.linkedin,
+      portfolio: profile.personalDetails.portfolio || cv.portfolio,
+      contact: [
+        profile.personalDetails.phone || cv.phone,
+        profile.personalDetails.email || cv.email,
+        profile.personalDetails.linkedin || cv.linkedin,
+        profile.personalDetails.portfolio || cv.portfolio,
+      ].filter(Boolean).join(" | ") || cv.contact,
+    };
+
     const id = await saveGeneratedCv(user.id, cv.title, body.jobTitle, body.template, body.jobDescription, cv);
     return NextResponse.json({ id, cv });
   } catch (error) {

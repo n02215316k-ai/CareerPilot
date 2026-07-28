@@ -180,6 +180,13 @@ export function fallbackCv(profile: CareerProfile, jobTitle: string): CvDocument
 
   return {
     title: `${name} - ${title}`,
+    candidateName: name,
+    targetRole: title,
+    location: profile.personalDetails.location,
+    phone: profile.personalDetails.phone,
+    email: profile.personalDetails.email,
+    linkedin: profile.personalDetails.linkedin,
+    portfolio: profile.personalDetails.portfolio,
     contact,
     summary: profile.professionalSummary || `Candidate targeting ${title} roles with verified education, skills and project experience.`,
     skills: unique([
@@ -234,6 +241,13 @@ export function normalizeCvDocument(input: unknown): CvDocument {
 
   return {
     title: asString(source.title) || "CareerPilot CV",
+    candidateName: asString(source.candidateName),
+    targetRole: asString(source.targetRole),
+    location: asString(source.location),
+    phone: asString(source.phone),
+    email: asString(source.email),
+    linkedin: asString(source.linkedin),
+    portfolio: asString(source.portfolio),
     contact: asString(source.contact),
     summary: asString(source.summary),
     skills: asStringArray(source.skills),

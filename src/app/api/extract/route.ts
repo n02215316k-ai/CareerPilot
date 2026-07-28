@@ -1,10 +1,10 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { errorResponse, requireUser } from "@/lib/api";
-import { getProfile, logAiRequest, saveProfile, saveUploadedDocument } from "@/lib/db";
+import { logAiRequest, saveUploadedDocument } from "@/lib/db";
 import { generateGeminiJson, geminiModel } from "@/lib/gemini";
 import { extractionPrompt } from "@/lib/prompts";
-import { mergeProfiles, normalizeProfile } from "@/lib/profile";
+import { normalizeProfile } from "@/lib/profile";
 
 type ExtractionResult = {
   profile?: unknown;
@@ -39,13 +39,9 @@ export async function POST(request: NextRequest) {
       result = { profile: heuristicProfile(extractedText), missingInformation: ["Review extracted details before saving."] };
     }
 
-    const currentProfile = await getProfile(user.id);
     const extractedProfile = normalizeProfile(result.profile);
-    const merged = mergeProfiles(currentProfile, extractedProfile);
-    await saveProfile(user.id, merged);
 
     return NextResponse.json({
-      profile: merged,
       extractedProfile,
       missingInformation: Array.isArray(result.missingInformation) ? result.missingInformation : [],
     });

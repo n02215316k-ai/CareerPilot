@@ -165,6 +165,17 @@ export async function listGeneratedCvs(userId: string): Promise<GeneratedCvRecor
   }));
 }
 
+export async function updateGeneratedCv(userId: string, id: string, title: string, content: CvDocument) {
+  const result = await query<{ id: string }>(
+    `update generated_cvs
+     set title = $3, content = $4
+     where id = $1 and user_id = $2
+     returning id`,
+    [id, userId, title, content],
+  );
+  return Boolean(result.rows[0]);
+}
+
 export async function logAiRequest(userId: string | null, feature: string, model: string, success: boolean, error?: string) {
   await query(
     "insert into ai_requests (id, user_id, feature, model, success, error) values ($1, $2, $3, $4, $5, $6)",

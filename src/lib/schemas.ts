@@ -63,5 +63,5 @@ export const generateCvSchema = z.object({
   profile: careerProfileSchema,
   jobTitle: z.string().trim().max(200).default(""),
   jobDescription: z.string().trim().min(20).max(20000),
-  template: z.enum(["ats", "graduate", "technical"]).default("ats"),
+  template: z.enum(["firstjob", "ats", "graduate", "technical"]).default("firstjob"),
 });

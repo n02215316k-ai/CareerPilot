@@ -14,7 +14,7 @@ import {
   UserRound,
 } from "lucide-react";
 import { ChangeEvent, useEffect, useMemo, useState } from "react";
-import { emptyProfile, profileCompleteness } from "@/lib/profile";
+import { emptyProfile, mergeProfiles, profileCompleteness } from "@/lib/profile";
 import type {
   CareerProfile,
   CertificationItem,
@@ -27,6 +27,7 @@ import type {
 } from "@/lib/types";
 
 type Tab = "profile" | "upload" | "tailor" | "history";
+type CvTemplate = "firstjob" | "ats" | "graduate" | "technical";
 
 const inputClass = "h-10 w-full border border-[#cbd3dc] bg-white px-3 text-sm outline-none focus:border-[#0f766e]";
 const areaClass = "min-h-24 w-full border border-[#cbd3dc] bg-white px-3 py-2 text-sm outline-none focus:border-[#0f766e]";
@@ -71,12 +72,14 @@ export default function Dashboard({ user }: { user: SessionUser }) {
   const [busy, setBusy] = useState(false);
   const [cvText, setCvText] = useState("");
   const [cvFile, setCvFile] = useState<File | null>(null);
+  const [pendingExtractedProfile, setPendingExtractedProfile] = useState<CareerProfile | null>(null);
   const [questions, setQuestions] = useState<string[]>([]);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [jobTitle, setJobTitle] = useState("");
   const [jobDescription, setJobDescription] = useState("");
-  const [template, setTemplate] = useState<"ats" | "graduate" | "technical">("ats");
+  const [template, setTemplate] = useState<CvTemplate>("firstjob");
   const [generatedCv, setGeneratedCv] = useState<CvDocument | null>(null);
+  const [currentCvId, setCurrentCvId] = useState<string | null>(null);
   const [history, setHistory] = useState<GeneratedCvRecord[]>([]);
 
   const completion = useMemo(() => profileCompleteness(profile), [profile]);
@@ -131,10 +134,9 @@ export default function Dashboard({ user }: { user: SessionUser }) {
 
     if (response.ok) {
       const payload = await response.json();
-      setProfile(payload.profile);
+      setPendingExtractedProfile(payload.extractedProfile);
       setQuestions(payload.missingInformation || []);
-      setStatus("CV extracted and merged into the profile.");
-      setActiveTab("profile");
+      setStatus("CV extracted. Review it before applying it to the verified profile.");
       return;
     }
 
@@ -175,6 +177,16 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     await saveProfile(nextProfile);
   }
 
+  async function applyExtractedProfile() {
+    if (!pendingExtractedProfile) return;
+    const nextProfile = mergeProfiles(profile, pendingExtractedProfile);
+    setProfile(nextProfile);
+    setPendingExtractedProfile(null);
+    await saveProfile(nextProfile);
+    setActiveTab("profile");
+    setStatus("Extracted CV details applied to the verified profile.");
+  }
+
   async function generateCv() {
     setBusy(true);
     setStatus("");
@@ -188,6 +200,7 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     if (response.ok) {
       const payload = await response.json();
       setGeneratedCv(payload.cv);
+      setCurrentCvId(payload.id);
       setStatus("CV generated.");
       await loadHistory();
       return;
@@ -196,7 +209,7 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     setStatus(await responseError(response));
   }
 
-  async function download(kind: "pdf" | "text") {
+  async function download(kind: "docx" | "pdf" | "text") {
     if (!generatedCv) return;
     const response = await fetch(`/api/export/${kind}`, {
       method: "POST",
@@ -211,9 +224,23 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `${slug(generatedCv.title)}.${kind === "pdf" ? "pdf" : "txt"}`;
+    anchor.download = `${slug(generatedCv.title)}.${kind}`;
     anchor.click();
     URL.revokeObjectURL(url);
+  }
+
+  async function saveGeneratedEdits() {
+    if (!generatedCv || !currentCvId) return;
+    setBusy(true);
+    setStatus("");
+    const response = await fetch(`/api/cvs/${currentCvId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(generatedCv),
+    });
+    setBusy(false);
+    setStatus(response.ok ? "CV edits saved to history." : await responseError(response));
+    if (response.ok) await loadHistory();
   }
 
   return (
@@ -278,6 +305,9 @@ export default function Dashboard({ user }: { user: SessionUser }) {
               cvText={cvText}
               setCvText={setCvText}
               setCvFile={setCvFile}
+              pendingExtractedProfile={pendingExtractedProfile}
+              onApplyExtracted={applyExtractedProfile}
+              onDiscardExtracted={() => setPendingExtractedProfile(null)}
               onExtract={extractCv}
             />
           ) : null}
@@ -294,6 +324,7 @@ export default function Dashboard({ user }: { user: SessionUser }) {
               generatedCv={generatedCv}
               setGeneratedCv={setGeneratedCv}
               onGenerate={generateCv}
+              onSaveEdited={saveGeneratedEdits}
               onDownload={download}
             />
           ) : null}
@@ -303,8 +334,9 @@ export default function Dashboard({ user }: { user: SessionUser }) {
               history={history}
               onLoad={(cv) => {
                 setGeneratedCv(cv.content);
+                setCurrentCvId(cv.id);
                 setJobTitle(cv.jobTitle);
-                setTemplate(cv.template as "ats" | "graduate" | "technical");
+                setTemplate((cv.template as CvTemplate) || "firstjob");
                 setActiveTab("tailor");
               }}
             />
@@ -500,12 +532,18 @@ function UploadTab({
   cvText,
   setCvText,
   setCvFile,
+  pendingExtractedProfile,
+  onApplyExtracted,
+  onDiscardExtracted,
   onExtract,
 }: {
   busy: boolean;
   cvText: string;
   setCvText: (value: string) => void;
   setCvFile: (file: File | null) => void;
+  pendingExtractedProfile: CareerProfile | null;
+  onApplyExtracted: () => void;
+  onDiscardExtracted: () => void;
   onExtract: () => void;
 }) {
   return (
@@ -527,8 +565,38 @@ function UploadTab({
         <button disabled={busy} onClick={onExtract} className="flex h-11 w-fit items-center justify-center gap-2 bg-[#0f766e] px-4 font-semibold text-white disabled:opacity-60">
           <Sparkles className="h-4 w-4" /> Extract profile
         </button>
+        {pendingExtractedProfile ? (
+          <div className="border border-[#fbbf24] bg-[#fffbeb] p-4">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.08em] text-[#784a06]">Review extracted profile</h3>
+            <div className="mt-3 grid gap-2 text-sm text-[#25313a] md:grid-cols-2">
+              <SummaryLine label="Name" value={pendingExtractedProfile.personalDetails.fullName || "Not found"} />
+              <SummaryLine label="Contact" value={pendingExtractedProfile.personalDetails.email || pendingExtractedProfile.personalDetails.phone || "Not found"} />
+              <SummaryLine label="Education" value={`${pendingExtractedProfile.education.length} entries`} />
+              <SummaryLine label="Experience" value={`${pendingExtractedProfile.experience.length} entries`} />
+              <SummaryLine label="Projects" value={`${pendingExtractedProfile.projects.length} entries`} />
+              <SummaryLine label="Skills" value={`${pendingExtractedProfile.skills.technical.length + pendingExtractedProfile.skills.tools.length} entries`} />
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <button onClick={onApplyExtracted} className="flex h-10 items-center gap-2 bg-[#0f766e] px-3 text-sm font-semibold text-white">
+                <Save className="h-4 w-4" /> Apply to profile
+              </button>
+              <button onClick={onDiscardExtracted} className="flex h-10 items-center gap-2 border border-[#cbd3dc] bg-white px-3 text-sm font-semibold">
+                <Trash2 className="h-4 w-4" /> Discard
+              </button>
+            </div>
+          </div>
+        ) : null}
       </div>
     </Panel>
+  );
+}
+
+function SummaryLine({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="border border-[#eadfbd] bg-white px-3 py-2">
+      <span className="block text-xs font-semibold uppercase tracking-[0.08em] text-[#8a6417]">{label}</span>
+      <span>{value}</span>
+    </div>
   );
 }
 
@@ -543,6 +611,7 @@ function TailorTab({
   generatedCv,
   setGeneratedCv,
   onGenerate,
+  onSaveEdited,
   onDownload,
 }: {
   busy: boolean;
@@ -550,12 +619,13 @@ function TailorTab({
   setJobTitle: (value: string) => void;
   jobDescription: string;
   setJobDescription: (value: string) => void;
-  template: "ats" | "graduate" | "technical";
-  setTemplate: (value: "ats" | "graduate" | "technical") => void;
+  template: CvTemplate;
+  setTemplate: (value: CvTemplate) => void;
   generatedCv: CvDocument | null;
   setGeneratedCv: (value: CvDocument) => void;
   onGenerate: () => void;
-  onDownload: (kind: "pdf" | "text") => void;
+  onSaveEdited: () => void;
+  onDownload: (kind: "docx" | "pdf" | "text") => void;
 }) {
   return (
     <div className="grid gap-4 xl:grid-cols-[420px_1fr]">
@@ -564,7 +634,8 @@ function TailorTab({
           <Field label="Job title" value={jobTitle} onChange={setJobTitle} />
           <label className={labelClass}>
             Template
-            <select className={inputClass} value={template} onChange={(event) => setTemplate(event.target.value as "ats" | "graduate" | "technical")}>
+            <select className={inputClass} value={template} onChange={(event) => setTemplate(event.target.value as CvTemplate)}>
+              <option value="firstjob">First Job Starter</option>
               <option value="ats">ATS</option>
               <option value="graduate">Graduate</option>
               <option value="technical">Technical</option>
@@ -582,7 +653,14 @@ function TailorTab({
 
       <Panel title="Editable Preview" icon={<FileText className="h-5 w-5" />}>
         {generatedCv ? (
-          <CvEditor cv={generatedCv} setCv={setGeneratedCv} onDownload={onDownload} />
+          <div className="grid gap-4">
+            <CvEditor cv={generatedCv} setCv={setGeneratedCv} onDownload={onDownload} />
+            <div className="no-print flex justify-end">
+              <button disabled={busy} onClick={onSaveEdited} className="flex h-10 items-center gap-2 border border-[#0f766e] bg-white px-3 text-sm font-semibold text-[#0f766e] disabled:opacity-60">
+                <Save className="h-4 w-4" /> Save edited version
+              </button>
+            </div>
+          </div>
         ) : (
           <div className="flex min-h-96 items-center justify-center border border-dashed border-[#cbd3dc] text-sm text-[#677683]">
             No CV generated yet.
@@ -600,13 +678,16 @@ function CvEditor({
 }: {
   cv: CvDocument;
   setCv: (value: CvDocument) => void;
-  onDownload: (kind: "pdf" | "text") => void;
+  onDownload: (kind: "docx" | "pdf" | "text") => void;
 }) {
   const update = (patch: Partial<CvDocument>) => setCv({ ...cv, ...patch });
 
   return (
     <div className="grid gap-4">
       <div className="no-print flex flex-wrap gap-2">
+        <button onClick={() => onDownload("docx")} className="flex h-10 items-center gap-2 bg-[#0f766e] px-3 text-sm font-semibold text-white">
+          <Download className="h-4 w-4" /> Word template
+        </button>
         <button onClick={() => onDownload("pdf")} className="flex h-10 items-center gap-2 bg-[#172026] px-3 text-sm font-semibold text-white">
           <Download className="h-4 w-4" /> PDF
         </button>
