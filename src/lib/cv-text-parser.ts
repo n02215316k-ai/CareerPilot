@@ -49,7 +49,7 @@ export function mergeExtractedProfiles(primary: CareerProfile, fallback: CareerP
     professionalSummary: chooseClean(primary.professionalSummary, fallback.professionalSummary),
     education: mergeByKey(primary.education, fallback.education, educationKey),
     experience: mergeByKey(primary.experience, fallback.experience, (item) => [item.role, item.company, item.startDate].join("|")),
-    projects: mergeByKey(primary.projects, fallback.projects, (item) => [item.name, item.role].join("|")),
+    projects: mergeProjectItems(primary.projects, fallback.projects),
     volunteering: unique([...primary.volunteering, ...fallback.volunteering]),
     skills: {
       technical: unique([...primary.skills.technical, ...fallback.skills.technical]),
@@ -374,6 +374,31 @@ function mergeByKey<T>(primary: T[], fallback: T[], keyFor: (item: T) => string)
     seen.add(key);
     return true;
   });
+}
+
+function mergeProjectItems(primary: ProjectItem[], fallback: ProjectItem[]) {
+  const byKey = new Map<string, ProjectItem>();
+  for (const item of [...primary, ...fallback]) {
+    const key = projectKey(item);
+    const existing = byKey.get(key);
+    if (!existing) {
+      byKey.set(key, item);
+      continue;
+    }
+    byKey.set(key, {
+      name: chooseClean(existing.name, item.name),
+      role: chooseClean(existing.role, item.role),
+      technologies: unique([...existing.technologies, ...item.technologies]),
+      description: chooseClean(existing.description, item.description),
+      outcome: chooseClean(existing.outcome, item.outcome),
+    });
+  }
+  return [...byKey.values()];
+}
+
+function projectKey(item: ProjectItem) {
+  const name = normalizeKey(item.name);
+  return `project:${name || normalizeKey([item.role, item.description].join(" "))}`;
 }
 
 function educationKey(item: EducationItem) {
