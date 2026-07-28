@@ -53,6 +53,7 @@ export type CareerProfile = {
   education: EducationItem[];
   experience: ExperienceItem[];
   projects: ProjectItem[];
+  volunteering: string[];
   skills: SkillGroups;
   certifications: CertificationItem[];
   achievements: string[];
@@ -86,8 +87,10 @@ export type CvDocument = {
   skills: string[];
   experience: CvExperience[];
   projects: CvProject[];
+  volunteering: string[];
   education: string[];
   certifications: string[];
+  references: string;
   keywords: string[];
   gaps: string[];
 };

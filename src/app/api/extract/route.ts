@@ -94,6 +94,7 @@ function heuristicProfile(text: string) {
     education: [],
     experience: [],
     projects: [],
+    volunteering: [],
     skills: {
       technical: skillsLine.split(/[:,]/).slice(1).join(",").split(",").map((item) => item.trim()).filter(Boolean),
       tools: [],

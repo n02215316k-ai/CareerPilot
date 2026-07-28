@@ -102,6 +102,7 @@ function buildProfileKeywords(profile: CareerProfile) {
     ...profile.projects.flatMap((project) => [project.name, project.role, ...project.technologies]),
     ...profile.experience.flatMap((item) => [item.role, ...item.bullets]),
     ...profile.education.flatMap((item) => [item.field, item.qualification]),
+    ...profile.volunteering,
   ])).slice(0, 80);
 }
 

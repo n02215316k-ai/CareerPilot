@@ -15,6 +15,7 @@ Return valid JSON with this exact shape:
     "education": [{"institution":"","qualification":"","field":"","startDate":"","endDate":"","details":""}],
     "experience": [{"company":"","role":"","location":"","startDate":"","endDate":"","bullets": []}],
     "projects": [{"name":"","role":"","technologies":[],"description":"","outcome":""}],
+    "volunteering": [],
     "skills": {"technical":[],"tools":[],"soft":[],"languages":[]},
     "certifications": [{"name":"","issuer":"","date":""}],
     "achievements": [],
@@ -69,8 +70,10 @@ Return valid JSON with this exact shape:
   "skills": [],
   "experience": [{"company":"","role":"","dates":"","bullets":[]}],
   "projects": [{"name":"","technologies":[],"bullets":[]}],
+  "volunteering": [],
   "education": [],
   "certifications": [],
+  "references": "",
   "keywords": [],
   "gaps": []
 }

@@ -21,6 +21,7 @@ export const emptyProfile: CareerProfile = {
   education: [],
   experience: [],
   projects: [],
+  volunteering: [],
   skills: {
     technical: [],
     tools: [],
@@ -66,6 +67,7 @@ export function normalizeProfile(input: unknown): CareerProfile {
     projects: Array.isArray(source.projects)
       ? source.projects.map(normalizeProject).filter(Boolean)
       : [],
+    volunteering: asStringArray(source.volunteering),
     skills: {
       technical: asStringArray(skills.technical),
       tools: asStringArray(skills.tools),
@@ -140,6 +142,7 @@ export function mergeProfiles(base: CareerProfile, incoming: CareerProfile): Car
     education: [...base.education, ...incoming.education],
     experience: [...base.experience, ...incoming.experience],
     projects: [...base.projects, ...incoming.projects],
+    volunteering: unique([...base.volunteering, ...incoming.volunteering]),
     skills: {
       technical: unique([...base.skills.technical, ...incoming.skills.technical]),
       tools: unique([...base.skills.tools, ...incoming.skills.tools]),
@@ -161,6 +164,7 @@ export function profileCompleteness(profile: CareerProfile) {
     profile.education.length > 0,
     profile.skills.technical.length + profile.skills.tools.length > 0,
     profile.projects.length > 0,
+    profile.volunteering.length > 0,
     profile.targetRoles.length > 0,
   ];
   const complete = checks.filter(Boolean).length;
@@ -206,6 +210,7 @@ export function fallbackCv(profile: CareerProfile, jobTitle: string): CvDocument
       technologies: project.technologies,
       bullets: [project.description, project.outcome].filter(Boolean),
     })),
+    volunteering: profile.volunteering,
     education: profile.education.map((item) =>
       [item.qualification, item.field, item.institution, [item.startDate, item.endDate].filter(Boolean).join(" - ")]
         .filter(Boolean)
@@ -214,6 +219,7 @@ export function fallbackCv(profile: CareerProfile, jobTitle: string): CvDocument
     certifications: profile.certifications.map((item) =>
       [item.name, item.issuer, item.date].filter(Boolean).join(", "),
     ),
+    references: profile.references || "Available on request",
     keywords: unique([...profile.targetRoles, ...profile.skills.technical, ...profile.skills.tools]).slice(0, 20),
     gaps: [],
   };
@@ -253,8 +259,10 @@ export function normalizeCvDocument(input: unknown): CvDocument {
     skills: asStringArray(source.skills),
     experience: Array.isArray(source.experience) ? source.experience.map(asCvExperience) : [],
     projects: Array.isArray(source.projects) ? source.projects.map(asCvProject) : [],
+    volunteering: asStringArray(source.volunteering),
     education: asStringArray(source.education),
     certifications: asStringArray(source.certifications),
+    references: asString(source.references) || "Available on request",
     keywords: asStringArray(source.keywords),
     gaps: asStringArray(source.gaps),
   };
@@ -284,11 +292,17 @@ export function cvToPlainText(cv: CvDocument) {
       ...item.bullets.map((bullet) => `- ${bullet}`),
       "",
     ]),
+    "Volunteering",
+    ...cv.volunteering.map((item) => `- ${item}`),
+    "",
     "Education",
     ...cv.education.map((item) => `- ${item}`),
     "",
     "Certifications",
     ...cv.certifications.map((item) => `- ${item}`),
+    "",
+    "References",
+    cv.references,
   ];
 
   return lines.filter((line, index) => line || lines[index - 1]).join("\n");

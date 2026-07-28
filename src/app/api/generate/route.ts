@@ -34,6 +34,8 @@ export async function POST(request: NextRequest) {
       email: profile.personalDetails.email || cv.email,
       linkedin: profile.personalDetails.linkedin || cv.linkedin,
       portfolio: profile.personalDetails.portfolio || cv.portfolio,
+      volunteering: cv.volunteering.length ? cv.volunteering : profile.volunteering,
+      references: profile.references || cv.references || "Available on request",
       contact: [
         profile.personalDetails.phone || cv.phone,
         profile.personalDetails.email || cv.email,

@@ -544,6 +544,13 @@ function ProfileTab({
           </div>
         </Panel>
 
+        <Panel title="Volunteering And Activities" icon={<ListChecks className="h-5 w-5" />}>
+          <label className={labelClass}>
+            Volunteering, community activities, clubs
+            <textarea className={areaClass} value={profile.volunteering.join("\n")} onChange={(event) => update({ volunteering: lines(event.target.value) })} />
+          </label>
+        </Panel>
+
         <Panel title="Skills And Credentials" icon={<ListChecks className="h-5 w-5" />}>
           <div className="grid gap-3 md:grid-cols-2">
             <Field label="Technical skills" value={profile.skills.technical.join(", ")} onChange={(value) => updateSkills("technical", value)} />
@@ -576,6 +583,19 @@ function ProfileTab({
       </div>
 
       <aside className="no-print grid h-fit gap-4">
+        <Panel title="Template Fields" icon={<FileText className="h-5 w-5" />}>
+          <div className="grid gap-2 text-sm">
+            {templateReadiness(profile).map((item) => (
+              <div key={item.label} className="flex items-center justify-between gap-3 border border-[#d9dee5] px-3 py-2">
+                <span>{item.label}</span>
+                <span className={`text-xs font-semibold uppercase tracking-[0.08em] ${item.ready ? "text-[#0f766e]" : "text-[#be123c]"}`}>
+                  {item.ready ? "Ready" : "Missing"}
+                </span>
+              </div>
+            ))}
+          </div>
+        </Panel>
+
         <Panel title="Review" icon={<Sparkles className="h-5 w-5" />}>
           <div className="flex gap-2">
             <button disabled={busy} onClick={onFindGaps} className="flex h-10 flex-1 items-center justify-center gap-2 bg-[#172026] px-3 text-sm font-semibold text-white disabled:opacity-60">
@@ -651,6 +671,7 @@ function UploadTab({
               <SummaryLine label="Education" value={`${pendingExtractedProfile.education.length} entries`} />
               <SummaryLine label="Experience" value={`${pendingExtractedProfile.experience.length} entries`} />
               <SummaryLine label="Projects" value={`${pendingExtractedProfile.projects.length} entries`} />
+              <SummaryLine label="Volunteering" value={`${pendingExtractedProfile.volunteering.length} entries`} />
               <SummaryLine label="Skills" value={`${pendingExtractedProfile.skills.technical.length + pendingExtractedProfile.skills.tools.length} entries`} />
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -732,6 +753,9 @@ function JobsTab({
               <select className={inputClass} value={source} onChange={(event) => setSource(event.target.value)}>
                 <option value="all">All approved sources</option>
                 <option value="vacancymail">VacancyMail</option>
+                <option value="jobszimbabwe">JobsZimbabwe</option>
+                <option value="ngojobsinafrica">NGOJobsInAfrica</option>
+                <option value="reliefweb">ReliefWeb</option>
               </select>
             </label>
             <div className="flex flex-wrap gap-2">
@@ -987,6 +1011,17 @@ function CvEditor({
 
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           <label className={labelClass}>
+            Volunteering
+            <textarea className={areaClass} value={cv.volunteering.join("\n")} onChange={(event) => update({ volunteering: lines(event.target.value) })} />
+          </label>
+          <label className={labelClass}>
+            References
+            <textarea className={areaClass} value={cv.references} onChange={(event) => update({ references: event.target.value })} />
+          </label>
+        </div>
+
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          <label className={labelClass}>
             Education
             <textarea className={areaClass} value={cv.education.join("\n")} onChange={(event) => update({ education: lines(event.target.value) })} />
           </label>
@@ -1070,6 +1105,22 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h3 className="mt-5 border-t border-[#d9dee5] pt-4 text-sm font-semibold uppercase tracking-[0.08em] text-[#25313a]">{children}</h3>;
 }
 
+function templateReadiness(profile: CareerProfile) {
+  return [
+    { label: "Name", ready: Boolean(profile.personalDetails.fullName) },
+    { label: "Target role", ready: profile.targetRoles.length > 0 },
+    { label: "Location", ready: Boolean(profile.personalDetails.location) },
+    { label: "Phone or email", ready: Boolean(profile.personalDetails.phone || profile.personalDetails.email) },
+    { label: "Personal profile", ready: Boolean(profile.professionalSummary) },
+    { label: "Key skills", ready: profile.skills.technical.length + profile.skills.tools.length + profile.skills.soft.length > 0 },
+    { label: "Education", ready: profile.education.length > 0 },
+    { label: "Experience", ready: profile.experience.length > 0 },
+    { label: "Volunteering", ready: profile.volunteering.length > 0 },
+    { label: "Projects", ready: profile.projects.length > 0 },
+    { label: "References", ready: Boolean(profile.references) },
+  ];
+}
+
 function BriefcaseMini() {
   return <FileText className="h-5 w-5" />;
 }
@@ -1127,6 +1178,11 @@ function slug(value: string) {
 function sourceLabel(source: string) {
   if (source === "vacancymail") return "VacancyMail";
   if (source === "vacancybox") return "VacancyBox";
+  if (source === "jobszimbabwe") return "JobsZimbabwe";
+  if (source === "ngojobsinafrica") return "NGOJobsInAfrica";
+  if (source === "reliefweb") return "ReliefWeb";
+  if (source === "zimbajob") return "Zimbajob";
+  if (source === "inasi") return "iNasi";
   return source.replace(/(^|\s)\S/g, (letter) => letter.toUpperCase());
 }
 

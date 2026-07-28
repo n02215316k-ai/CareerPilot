@@ -1,6 +1,6 @@
 import { Pool, type QueryResultRow } from "pg";
 import { randomUUID } from "crypto";
-import { emptyProfile, normalizeProfile } from "./profile";
+import { emptyProfile, normalizeCvDocument, normalizeProfile } from "./profile";
 import { recommendJobsFromProfile } from "./job-recommendations";
 import type { CareerProfile, CvDocument, GeneratedCvRecord, JobListing, JobRecommendation, JobSyncRun } from "./types";
 
@@ -196,7 +196,7 @@ export async function listGeneratedCvs(userId: string): Promise<GeneratedCvRecor
     title: row.title,
     jobTitle: row.job_title,
     template: row.template,
-    content: row.content,
+    content: normalizeCvDocument(row.content),
     createdAt: row.created_at.toISOString(),
   }));
 }
@@ -249,7 +249,7 @@ export async function listJobs(options: { search?: string; source?: string; loca
     values,
   );
 
-  return result.rows.map(mapJobRow);
+  return result.rows.map(mapJobRow).filter(isCurrentJob);
 }
 
 export async function listRecommendedJobs(userId: string): Promise<JobRecommendation[]> {
@@ -319,4 +319,14 @@ function mapJobRow(row: JobListingRow): JobListing {
     discoveredAt: row.discovered_at.toISOString(),
     updatedAt: row.updated_at.toISOString(),
   };
+}
+
+function isCurrentJob(job: JobListing) {
+  const text = job.expiresText.replace(/^(expires|closes)\s+/i, "").trim();
+  if (!text) return true;
+  const parsed = Date.parse(text);
+  if (Number.isNaN(parsed)) return true;
+  const endOfDay = new Date(parsed);
+  endOfDay.setHours(23, 59, 59, 999);
+  return endOfDay.getTime() >= Date.now();
 }

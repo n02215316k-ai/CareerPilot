@@ -29,8 +29,10 @@ services:
     env_file:
       - .env
     environment:
-      JOB_SYNC_INTERVAL_MINUTES: "60"
-      VACANCYMAIL_MAX_PAGES: "3"
+      JOB_SYNC_INTERVAL_MINUTES: "10"
+      VACANCYMAIL_MAX_PAGES: "12"
+      JOBSZIMBABWE_MAX_PAGES: "10"
+      NGOJOBSINAFRICA_MAX_PAGES: "3"
     networks:
       - backend
 

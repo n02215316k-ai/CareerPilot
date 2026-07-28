@@ -18,6 +18,7 @@ const roleIndexes = {
   experienceTitle: 16,
   experienceBody: 17,
   project: 24,
+  volunteering: 23,
   references: 26,
 };
 
@@ -49,9 +50,10 @@ export async function createFirstJobTemplateDocx(cv: CvDocument) {
     paragraphText(paragraphs[roleIndexes.blank], ""),
     paragraphText(paragraphs[roleIndexes.heading], "EXPERIENCE"),
     ...experienceParagraphs(paragraphs, cv.experience),
+    ...volunteeringParagraphs(paragraphs, cv.volunteering),
     ...projectParagraphs(paragraphs, cv.projects),
     paragraphText(paragraphs[roleIndexes.heading], "REFERENCES"),
-    paragraphText(paragraphs[roleIndexes.references], "Available on request"),
+    paragraphText(paragraphs[roleIndexes.references], cv.references || "Available on request"),
   ];
 
   const nextDocumentXml = documentXml.replace(
@@ -122,6 +124,12 @@ function projectParagraphs(paragraphs: string[], projects: CvProject[]) {
     .join(" ");
 
   return [paragraphRuns(paragraphs[roleIndexes.project], ["Projects: ", projectText, ""])];
+}
+
+function volunteeringParagraphs(paragraphs: string[], volunteering: string[]) {
+  const clean = unique(volunteering).slice(0, 6);
+  if (!clean.length) return [];
+  return [paragraphRuns(paragraphs[roleIndexes.volunteering], ["Volunteering: ", clean.join(", "), ""])];
 }
 
 function skillLines(skills: string[]) {

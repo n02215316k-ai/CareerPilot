@@ -44,6 +44,7 @@ export const careerProfileSchema = z.object({
     description: z.string().trim().max(1500).default(""),
     outcome: z.string().trim().max(1000).default(""),
   })).default([]),
+  volunteering: stringArray,
   skills: z.object({
     technical: stringArray,
     tools: stringArray,
