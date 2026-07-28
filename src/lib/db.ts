@@ -1,7 +1,8 @@
 import { Pool, type QueryResultRow } from "pg";
 import { randomUUID } from "crypto";
 import { emptyProfile, normalizeProfile } from "./profile";
-import type { CareerProfile, CvDocument, GeneratedCvRecord } from "./types";
+import { recommendJobsFromProfile } from "./job-recommendations";
+import type { CareerProfile, CvDocument, GeneratedCvRecord, JobListing, JobRecommendation, JobSyncRun } from "./types";
 
 type QueryValue = string | number | boolean | null | Date | Record<string, unknown> | unknown[];
 
@@ -66,6 +67,41 @@ async function ensureSchema() {
       error text,
       created_at timestamptz not null default now()
     );
+
+    create table if not exists job_listings (
+      id text primary key,
+      source text not null,
+      external_id text not null,
+      title text not null,
+      company text not null default '',
+      location text not null default '',
+      job_type text not null default '',
+      salary text not null default '',
+      expires_text text not null default '',
+      posted_text text not null default '',
+      summary text not null default '',
+      description text not null default '',
+      url text not null,
+      discovered_at timestamptz not null default now(),
+      updated_at timestamptz not null default now(),
+      raw jsonb not null default '{}'::jsonb,
+      unique (source, external_id)
+    );
+
+    create index if not exists job_listings_updated_at_idx on job_listings (updated_at desc);
+    create index if not exists job_listings_source_idx on job_listings (source);
+
+    create table if not exists job_sync_runs (
+      id text primary key,
+      source text not null,
+      status text not null,
+      jobs_found integer not null default 0,
+      message text not null default '',
+      started_at timestamptz not null default now(),
+      finished_at timestamptz not null default now()
+    );
+
+    create index if not exists job_sync_runs_source_finished_idx on job_sync_runs (source, finished_at desc);
   `).then(() => undefined);
 
   return globalForDb.careerPilotSchema;
@@ -181,4 +217,106 @@ export async function logAiRequest(userId: string | null, feature: string, model
     "insert into ai_requests (id, user_id, feature, model, success, error) values ($1, $2, $3, $4, $5, $6)",
     [randomUUID(), userId, feature, model, success, error || null],
   );
+}
+
+export async function listJobs(options: { search?: string; source?: string; location?: string; limit?: number } = {}): Promise<JobListing[]> {
+  const clauses: string[] = [];
+  const values: QueryValue[] = [];
+
+  if (options.search) {
+    values.push(`%${options.search}%`);
+    clauses.push(`(title ilike $${values.length} or company ilike $${values.length} or summary ilike $${values.length} or description ilike $${values.length})`);
+  }
+
+  if (options.source && options.source !== "all") {
+    values.push(options.source);
+    clauses.push(`source = $${values.length}`);
+  }
+
+  if (options.location) {
+    values.push(`%${options.location}%`);
+    clauses.push(`location ilike $${values.length}`);
+  }
+
+  values.push(Math.min(Math.max(options.limit || 80, 1), 150));
+
+  const result = await query<JobListingRow>(
+    `select *
+     from job_listings
+     ${clauses.length ? `where ${clauses.join(" and ")}` : ""}
+     order by updated_at desc
+     limit $${values.length}`,
+    values,
+  );
+
+  return result.rows.map(mapJobRow);
+}
+
+export async function listRecommendedJobs(userId: string): Promise<JobRecommendation[]> {
+  const profile = await getProfile(userId);
+  const jobs = await listJobs({ limit: 150 });
+  return recommendJobsFromProfile(profile, jobs).slice(0, 40);
+}
+
+export async function listJobSyncRuns(): Promise<JobSyncRun[]> {
+  const result = await query<JobSyncRunRow>(
+    `select distinct on (source) *
+     from job_sync_runs
+     order by source, finished_at desc`,
+  );
+  return result.rows.map((row) => ({
+    id: row.id,
+    source: row.source,
+    status: row.status,
+    jobsFound: row.jobs_found,
+    message: row.message,
+    startedAt: row.started_at.toISOString(),
+    finishedAt: row.finished_at.toISOString(),
+  }));
+}
+
+type JobListingRow = {
+  id: string;
+  source: string;
+  title: string;
+  company: string;
+  location: string;
+  job_type: string;
+  salary: string;
+  expires_text: string;
+  posted_text: string;
+  summary: string;
+  description: string;
+  url: string;
+  discovered_at: Date;
+  updated_at: Date;
+};
+
+type JobSyncRunRow = {
+  id: string;
+  source: string;
+  status: string;
+  jobs_found: number;
+  message: string;
+  started_at: Date;
+  finished_at: Date;
+};
+
+function mapJobRow(row: JobListingRow): JobListing {
+  return {
+    id: row.id,
+    source: row.source,
+    title: row.title,
+    company: row.company,
+    location: row.location,
+    jobType: row.job_type,
+    salary: row.salary,
+    expiresText: row.expires_text,
+    postedText: row.posted_text,
+    summary: row.summary,
+    description: row.description,
+    url: row.url,
+    discoveredAt: row.discovered_at.toISOString(),
+    updatedAt: row.updated_at.toISOString(),
+  };
 }

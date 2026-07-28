@@ -101,6 +101,39 @@ export type GeneratedCvRecord = {
   createdAt: string;
 };
 
+export type JobListing = {
+  id: string;
+  source: string;
+  title: string;
+  company: string;
+  location: string;
+  jobType: string;
+  salary: string;
+  expiresText: string;
+  postedText: string;
+  summary: string;
+  description: string;
+  url: string;
+  discoveredAt: string;
+  updatedAt: string;
+};
+
+export type JobSyncRun = {
+  id: string;
+  source: string;
+  status: string;
+  jobsFound: number;
+  message: string;
+  startedAt: string;
+  finishedAt: string;
+};
+
+export type JobRecommendation = JobListing & {
+  score: number;
+  matchedKeywords: string[];
+  reasons: string[];
+};
+
 export type SessionUser = {
   id: string;
   email: string;

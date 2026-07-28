@@ -19,6 +19,21 @@ services:
       retries: 5
       start_period: 30s
 
+  careerpilot-jobs-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: careerpilot-jobs-worker
+    restart: unless-stopped
+    command: ["node", "worker/job-sync.mjs"]
+    env_file:
+      - .env
+    environment:
+      JOB_SYNC_INTERVAL_MINUTES: "60"
+      VACANCYMAIL_MAX_PAGES: "3"
+    networks:
+      - backend
+
 networks:
   proxy:
     external: true

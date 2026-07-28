@@ -1,14 +1,20 @@
 "use client";
 
 import {
+  BriefcaseBusiness,
   Download,
+  ExternalLink,
   FileText,
   History,
   ListChecks,
   LogOut,
+  MapPin,
   Plus,
+  RefreshCw,
   Save,
+  Search,
   Sparkles,
+  Star,
   Trash2,
   Upload,
   UserRound,
@@ -22,11 +28,14 @@ import type {
   EducationItem,
   ExperienceItem,
   GeneratedCvRecord,
+  JobListing,
+  JobRecommendation,
+  JobSyncRun,
   ProjectItem,
   SessionUser,
 } from "@/lib/types";
 
-type Tab = "profile" | "upload" | "tailor" | "history";
+type Tab = "profile" | "upload" | "jobs" | "tailor" | "history";
 type CvTemplate = "firstjob" | "ats" | "graduate" | "technical";
 
 const inputClass = "h-10 w-full border border-[#cbd3dc] bg-white px-3 text-sm outline-none focus:border-[#0f766e]";
@@ -81,12 +90,20 @@ export default function Dashboard({ user }: { user: SessionUser }) {
   const [generatedCv, setGeneratedCv] = useState<CvDocument | null>(null);
   const [currentCvId, setCurrentCvId] = useState<string | null>(null);
   const [history, setHistory] = useState<GeneratedCvRecord[]>([]);
+  const [jobs, setJobs] = useState<JobListing[]>([]);
+  const [recommendations, setRecommendations] = useState<JobRecommendation[]>([]);
+  const [jobSyncRuns, setJobSyncRuns] = useState<JobSyncRun[]>([]);
+  const [jobsLoading, setJobsLoading] = useState(false);
+  const [jobSearch, setJobSearch] = useState("");
+  const [jobLocation, setJobLocation] = useState("");
+  const [jobSource, setJobSource] = useState("all");
 
   const completion = useMemo(() => profileCompleteness(profile), [profile]);
 
   useEffect(() => {
     void loadProfile();
     void loadHistory();
+    void loadJobs();
   }, []);
 
   async function loadProfile() {
@@ -102,6 +119,39 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     if (response.ok) {
       const payload = await response.json();
       setHistory(payload.cvs || []);
+    }
+  }
+
+  async function loadJobs() {
+    setJobsLoading(true);
+    const params = new URLSearchParams({ limit: "100" });
+    if (jobSearch.trim()) params.set("search", jobSearch.trim());
+    if (jobLocation.trim()) params.set("location", jobLocation.trim());
+    if (jobSource !== "all") params.set("source", jobSource);
+
+    try {
+      const [jobsResponse, recommendationsResponse] = await Promise.all([
+        fetch(`/api/jobs?${params.toString()}`),
+        fetch("/api/jobs/recommendations"),
+      ]);
+
+      if (jobsResponse.ok) {
+        const payload = await jobsResponse.json();
+        setJobs(payload.jobs || []);
+        setJobSyncRuns(payload.syncRuns || []);
+      } else {
+        setStatus(await responseError(jobsResponse));
+      }
+
+      if (recommendationsResponse.ok) {
+        const payload = await recommendationsResponse.json();
+        setRecommendations(payload.recommendations || []);
+        if (!jobSyncRuns.length) setJobSyncRuns(payload.syncRuns || []);
+      }
+    } catch {
+      setStatus("Could not load jobs.");
+    } finally {
+      setJobsLoading(false);
     }
   }
 
@@ -243,6 +293,15 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     if (response.ok) await loadHistory();
   }
 
+  function useJobForCv(job: JobListing) {
+    setJobTitle(job.title);
+    setJobDescription(formatJobForTailoring(job));
+    setGeneratedCv(null);
+    setCurrentCvId(null);
+    setActiveTab("tailor");
+    setStatus(`Loaded ${job.title} into the CV tailoring workflow.`);
+  }
+
   return (
     <main className="min-h-screen bg-[#f6f7f9] text-[#172026]">
       <header className="no-print border-b border-[#d9dee5] bg-white">
@@ -277,6 +336,7 @@ export default function Dashboard({ user }: { user: SessionUser }) {
           <nav className="grid gap-2">
             <TabButton active={activeTab === "profile"} icon={<UserRound />} label="Profile" onClick={() => setActiveTab("profile")} />
             <TabButton active={activeTab === "upload"} icon={<Upload />} label="Upload" onClick={() => setActiveTab("upload")} />
+            <TabButton active={activeTab === "jobs"} icon={<BriefcaseBusiness />} label="Jobs" onClick={() => setActiveTab("jobs")} />
             <TabButton active={activeTab === "tailor"} icon={<Sparkles />} label="Tailor" onClick={() => setActiveTab("tailor")} />
             <TabButton active={activeTab === "history"} icon={<History />} label="History" onClick={() => setActiveTab("history")} />
           </nav>
@@ -309,6 +369,23 @@ export default function Dashboard({ user }: { user: SessionUser }) {
               onApplyExtracted={applyExtractedProfile}
               onDiscardExtracted={() => setPendingExtractedProfile(null)}
               onExtract={extractCv}
+            />
+          ) : null}
+
+          {activeTab === "jobs" ? (
+            <JobsTab
+              jobs={jobs}
+              recommendations={recommendations}
+              syncRuns={jobSyncRuns}
+              jobsLoading={jobsLoading}
+              search={jobSearch}
+              setSearch={setJobSearch}
+              location={jobLocation}
+              setLocation={setJobLocation}
+              source={jobSource}
+              setSource={setJobSource}
+              onRefresh={loadJobs}
+              onUseJob={useJobForCv}
             />
           ) : null}
 
@@ -600,6 +677,175 @@ function SummaryLine({ label, value }: { label: string; value: string }) {
   );
 }
 
+function JobsTab({
+  jobs,
+  recommendations,
+  syncRuns,
+  jobsLoading,
+  search,
+  setSearch,
+  location,
+  setLocation,
+  source,
+  setSource,
+  onRefresh,
+  onUseJob,
+}: {
+  jobs: JobListing[];
+  recommendations: JobRecommendation[];
+  syncRuns: JobSyncRun[];
+  jobsLoading: boolean;
+  search: string;
+  setSearch: (value: string) => void;
+  location: string;
+  setLocation: (value: string) => void;
+  source: string;
+  setSource: (value: string) => void;
+  onRefresh: () => void;
+  onUseJob: (job: JobListing) => void;
+}) {
+  return (
+    <div className="grid gap-4 xl:grid-cols-[360px_1fr]">
+      <div className="grid h-fit gap-4">
+        <Panel title="Job Board" icon={<BriefcaseBusiness className="h-5 w-5" />}>
+          <div className="grid gap-3">
+            <label className={labelClass}>
+              Keywords
+              <div className="flex border border-[#cbd3dc] bg-white focus-within:border-[#0f766e]">
+                <span className="flex w-10 items-center justify-center text-[#677683]">
+                  <Search className="h-4 w-4" />
+                </span>
+                <input className="h-10 w-full px-1 text-sm outline-none" value={search} onChange={(event) => setSearch(event.target.value)} />
+              </div>
+            </label>
+            <label className={labelClass}>
+              Location
+              <div className="flex border border-[#cbd3dc] bg-white focus-within:border-[#0f766e]">
+                <span className="flex w-10 items-center justify-center text-[#677683]">
+                  <MapPin className="h-4 w-4" />
+                </span>
+                <input className="h-10 w-full px-1 text-sm outline-none" value={location} onChange={(event) => setLocation(event.target.value)} />
+              </div>
+            </label>
+            <label className={labelClass}>
+              Source
+              <select className={inputClass} value={source} onChange={(event) => setSource(event.target.value)}>
+                <option value="all">All approved sources</option>
+                <option value="vacancymail">VacancyMail</option>
+              </select>
+            </label>
+            <div className="flex flex-wrap gap-2">
+              <button disabled={jobsLoading} onClick={onRefresh} className="flex h-10 items-center justify-center gap-2 bg-[#0f766e] px-3 text-sm font-semibold text-white disabled:opacity-60">
+                <RefreshCw className={`h-4 w-4 ${jobsLoading ? "animate-spin" : ""}`} /> Refresh
+              </button>
+              <button
+                onClick={() => {
+                  setSearch("");
+                  setLocation("");
+                  setSource("all");
+                }}
+                className="flex h-10 items-center justify-center border border-[#cbd3dc] bg-white px-3 text-sm font-semibold"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        </Panel>
+
+        <Panel title="Sources" icon={<RefreshCw className="h-5 w-5" />}>
+          <div className="grid gap-3">
+            {syncRuns.length ? syncRuns.map((run) => (
+              <div key={run.id} className="border border-[#d9dee5] p-3 text-sm">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-semibold">{sourceLabel(run.source)}</span>
+                  <span className={`px-2 py-1 text-xs font-semibold uppercase tracking-[0.08em] ${syncStatusClass(run.status)}`}>{run.status}</span>
+                </div>
+                <p className="mt-2 text-[#53616d]">{run.jobsFound} jobs | {formatDateTime(run.finishedAt)}</p>
+                {run.message ? <p className="mt-2 text-[#25313a]">{run.message}</p> : null}
+              </div>
+            )) : (
+              <p className="text-sm text-[#677683]">No sync runs yet.</p>
+            )}
+          </div>
+        </Panel>
+      </div>
+
+      <div className="grid gap-4">
+        <Panel title="Recommended Matches" icon={<Star className="h-5 w-5" />}>
+          <div className="grid gap-3">
+            {recommendations.length ? recommendations.slice(0, 8).map((job) => (
+              <JobCard key={`recommended-${job.id}`} job={job} onUseJob={onUseJob} />
+            )) : (
+              <p className="text-sm text-[#677683]">No recommendations yet.</p>
+            )}
+          </div>
+        </Panel>
+
+        <Panel title="Latest Jobs" icon={<BriefcaseBusiness className="h-5 w-5" />}>
+          <div className="grid gap-3">
+            {jobs.length ? jobs.map((job) => (
+              <JobCard key={job.id} job={job} onUseJob={onUseJob} />
+            )) : (
+              <p className="text-sm text-[#677683]">No jobs found.</p>
+            )}
+          </div>
+        </Panel>
+      </div>
+    </div>
+  );
+}
+
+function JobCard({ job, onUseJob }: { job: JobListing | JobRecommendation; onUseJob: (job: JobListing) => void }) {
+  const recommendation = "score" in job ? job : null;
+
+  return (
+    <article className="grid gap-3 border border-[#d9dee5] bg-white p-3">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h3 className="text-base font-semibold text-[#172026]">{job.title}</h3>
+          <p className="mt-1 text-sm text-[#53616d]">{[job.company, job.location].filter(Boolean).join(" | ") || sourceLabel(job.source)}</p>
+        </div>
+        <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.08em]">
+          <span className="border border-[#cbd3dc] px-2 py-1 text-[#42515c]">{sourceLabel(job.source)}</span>
+          {recommendation ? <span className="border border-[#b7dfd9] bg-[#ecfdf5] px-2 py-1 text-[#0f766e]">{Math.min(recommendation.score, 100)} pts</span> : null}
+        </div>
+      </div>
+
+      <div className="flex flex-wrap gap-2 text-xs text-[#53616d]">
+        {job.jobType ? <span className="border border-[#d9dee5] px-2 py-1">{job.jobType}</span> : null}
+        {job.salary ? <span className="border border-[#d9dee5] px-2 py-1">{job.salary}</span> : null}
+        {job.postedText ? <span className="border border-[#d9dee5] px-2 py-1">{job.postedText}</span> : null}
+        {job.expiresText ? <span className="border border-[#d9dee5] px-2 py-1">{job.expiresText}</span> : null}
+      </div>
+
+      {job.summary ? <p className="text-sm leading-6 text-[#25313a]">{job.summary}</p> : null}
+
+      {recommendation?.matchedKeywords.length ? (
+        <div className="flex flex-wrap gap-2">
+          {recommendation.matchedKeywords.slice(0, 10).map((keyword) => (
+            <span key={keyword} className="border border-[#d8eee9] bg-[#f5fffc] px-2 py-1 text-xs text-[#0f766e]">{keyword}</span>
+          ))}
+        </div>
+      ) : null}
+
+      {recommendation?.reasons.length ? (
+        <ul className="grid gap-1 text-xs text-[#53616d]">
+          {recommendation.reasons.slice(0, 3).map((reason) => <li key={reason}>{reason}</li>)}
+        </ul>
+      ) : null}
+
+      <div className="flex flex-wrap gap-2">
+        <button onClick={() => onUseJob(job)} className="flex h-10 items-center justify-center gap-2 bg-[#172026] px-3 text-sm font-semibold text-white">
+          <Sparkles className="h-4 w-4" /> Tailor CV
+        </button>
+        <a href={job.url} target="_blank" rel="noreferrer" className="flex h-10 items-center justify-center gap-2 border border-[#cbd3dc] bg-white px-3 text-sm font-semibold">
+          <ExternalLink className="h-4 w-4" /> Open source
+        </a>
+      </div>
+    </article>
+  );
+}
+
 function TailorTab({
   busy,
   jobTitle,
@@ -876,6 +1122,46 @@ function lines(value: string) {
 
 function slug(value: string) {
   return (value || "careerpilot-cv").replace(/[^a-z0-9-]+/gi, "-").replace(/^-|-$/g, "").toLowerCase();
+}
+
+function sourceLabel(source: string) {
+  if (source === "vacancymail") return "VacancyMail";
+  if (source === "vacancybox") return "VacancyBox";
+  return source.replace(/(^|\s)\S/g, (letter) => letter.toUpperCase());
+}
+
+function syncStatusClass(status: string) {
+  if (status === "success") return "border border-[#b7dfd9] bg-[#ecfdf5] text-[#0f766e]";
+  if (status === "error") return "border border-[#fecdd3] bg-[#fff1f2] text-[#be123c]";
+  if (status === "skipped") return "border border-[#fde68a] bg-[#fffbeb] text-[#92400e]";
+  return "border border-[#d9dee5] bg-[#f6f7f9] text-[#53616d]";
+}
+
+function formatDateTime(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleString([], {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+function formatJobForTailoring(job: JobListing) {
+  return [
+    `Job title: ${job.title}`,
+    job.company ? `Company: ${job.company}` : "",
+    job.location ? `Location: ${job.location}` : "",
+    job.jobType ? `Job type: ${job.jobType}` : "",
+    job.salary ? `Salary: ${job.salary}` : "",
+    job.expiresText ? `Deadline: ${job.expiresText}` : "",
+    job.summary ? `Summary:\n${job.summary}` : "",
+    job.description && job.description !== job.summary ? `Description:\n${job.description}` : "",
+    `Source: ${sourceLabel(job.source)}`,
+    `URL: ${job.url}`,
+  ].filter(Boolean).join("\n\n");
 }
 
 function clone<T>(value: T): T {
