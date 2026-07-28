@@ -33,6 +33,9 @@ export function parseCvText(text: string): CareerProfile {
 }
 
 export function mergeExtractedProfiles(primary: CareerProfile, fallback: CareerProfile): CareerProfile {
+  const primaryCertifications = expandCertificationItems(primary.certifications);
+  const fallbackCertifications = expandCertificationItems(fallback.certifications);
+
   return normalizeProfile({
     personalDetails: {
       fullName: chooseClean(primary.personalDetails.fullName, fallback.personalDetails.fullName, true),
@@ -54,7 +57,7 @@ export function mergeExtractedProfiles(primary: CareerProfile, fallback: CareerP
       soft: unique([...primary.skills.soft, ...fallback.skills.soft]),
       languages: unique([...primary.skills.languages, ...fallback.skills.languages]),
     },
-    certifications: mergeByKey(primary.certifications, fallback.certifications, certificationKey),
+    certifications: mergeByKey(primaryCertifications, fallbackCertifications, certificationKey),
     achievements: unique([...primary.achievements, ...fallback.achievements]),
     references: chooseClean(primary.references, fallback.references),
   });
@@ -293,14 +296,7 @@ function parseCertifications(lines: string[]): CertificationItem[] {
   return lines
     .map(stripBullet)
     .filter(Boolean)
-    .flatMap((line) => {
-      const [names, issuer = ""] = line.split(titleSeparator).map((part) => part.trim());
-      return names.split(";").map((name, index) => ({
-        name: name.trim(),
-        issuer: index === 0 ? issuer : "",
-        date: "",
-      }));
-    })
+    .flatMap((line) => expandCertificationItem(certificationFromLine(line)))
     .filter((item) => item.name);
 }
 
@@ -393,6 +389,23 @@ function educationKey(item: EducationItem) {
 
 function certificationKey(item: CertificationItem) {
   return `certification:${normalizeKey([item.name, item.issuer].join(" "))}`;
+}
+
+function expandCertificationItems(items: CertificationItem[]) {
+  return items.flatMap(expandCertificationItem);
+}
+
+function expandCertificationItem(item: CertificationItem): CertificationItem[] {
+  return item.name.split(";").map((name, index) => ({
+    name: name.trim(),
+    issuer: index === 0 ? item.issuer : "",
+    date: index === 0 ? item.date : "",
+  })).filter((certification) => certification.name);
+}
+
+function certificationFromLine(line: string): CertificationItem {
+  const [name, issuer = ""] = line.split(titleSeparator).map((part) => part.trim());
+  return { name, issuer, date: "" };
 }
 
 function normalizeKey(value: string) {
