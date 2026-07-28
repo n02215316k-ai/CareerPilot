@@ -14,6 +14,7 @@ const roleIndexes = {
   body: 5,
   blank: 6,
   skill: 8,
+  skillSecond: 9,
   education: 11,
   experienceTitle: 16,
   experienceBody: 17,
@@ -44,9 +45,9 @@ export async function createFirstJobTemplateDocx(cv: CvDocument) {
     ...paragraphsForText(paragraphs[roleIndexes.body], cv.summary || "Professional candidate with verified skills and experience aligned to the target role."),
     paragraphText(paragraphs[roleIndexes.blank], ""),
     paragraphText(paragraphs[roleIndexes.heading], "KEY SKILLS"),
-    ...skillLines(cv.skills).map((line) => paragraphText(paragraphs[roleIndexes.skill], line)),
+    ...skillLines(cv.skills).map((line, index) => paragraphText(paragraphs[index === 1 ? roleIndexes.skillSecond : roleIndexes.skill], line)),
     paragraphText(paragraphs[roleIndexes.heading], "EDUCATION"),
-    ...educationLines(cv).map((line, index) => educationParagraph(paragraphs[roleIndexes.education], line, index + 1)),
+    ...educationLines(cv).map((line, index) => educationParagraph(paragraphs, line, index + 1)),
     paragraphText(paragraphs[roleIndexes.blank], ""),
     paragraphText(paragraphs[roleIndexes.heading], "EXPERIENCE"),
     ...experienceParagraphs(paragraphs, cv.experience),
@@ -98,7 +99,7 @@ function experienceParagraphs(paragraphs: string[], experience: CvExperience[]) 
     return [paragraphText(paragraphs[roleIndexes.experienceBody], "Experience details available on request.")];
   }
 
-  return experience.flatMap((item) => {
+  return experience.flatMap((item, index) => {
     const dates = item.dates ? ` - ${item.dates}` : "";
     const title = paragraphRuns(paragraphs[roleIndexes.experienceTitle], [
       `${item.role || "Role"} `,
@@ -108,7 +109,11 @@ function experienceParagraphs(paragraphs: string[], experience: CvExperience[]) 
       ")",
     ]);
     const bullets = item.bullets.length ? item.bullets : ["Responsibilities available on request."];
-    return [title, ...bullets.flatMap((bullet) => paragraphsForText(paragraphs[roleIndexes.experienceBody], bullet))];
+    return [
+      ...(index >= 2 ? [paragraphText(paragraphs[roleIndexes.blank], "")] : []),
+      title,
+      ...bullets.flatMap((bullet) => paragraphsForText(paragraphs[roleIndexes.experienceBody], bullet)),
+    ];
   });
 }
 
@@ -119,7 +124,7 @@ function projectParagraphs(paragraphs: string[], projects: CvProject[]) {
     .map((project) => {
       const tech = project.technologies.length ? ` (${project.technologies.join(", ")})` : "";
       const details = project.bullets.join(" ");
-      return [project.name + tech, details].filter(Boolean).join(": ");
+      return ensureSentencePeriod([project.name + tech, details].filter(Boolean).join(": "));
     })
     .join(" ");
 
@@ -129,7 +134,7 @@ function projectParagraphs(paragraphs: string[], projects: CvProject[]) {
 function volunteeringParagraphs(paragraphs: string[], volunteering: string[]) {
   const clean = unique(volunteering).slice(0, 6);
   if (!clean.length) return [];
-  return [paragraphRuns(paragraphs[roleIndexes.volunteering], ["Volunteering: ", clean.join(", "), ""])];
+  return [paragraphRuns(paragraphs[roleIndexes.volunteering], ["Volunteering: ", ensureSentencePeriod(clean.join(", ")), ""])];
 }
 
 function skillLines(skills: string[]) {
@@ -140,7 +145,7 @@ function skillLines(skills: string[]) {
   let current = "";
   for (const skill of clean) {
     const next = current ? `${current} | ${skill}` : skill;
-    if (next.length > 120 && current) {
+    if (next.length > 175 && current) {
       lines.push(`${current} |`);
       current = skill;
     } else {
@@ -151,15 +156,34 @@ function skillLines(skills: string[]) {
   return lines.slice(0, 3);
 }
 
-function educationParagraph(template: string, line: string, number: number) {
-  const [lead, ...restParts] = line.split(":");
-  const rest = restParts.length ? `: ${restParts.join(":").trim()}` : "";
-  return paragraphRuns(template, [`${number}`, ".", lead.trim(), rest, "", ""]);
+function educationParagraph(paragraphs: string[], line: string, number: number) {
+  const parts = splitEducationLine(line);
+  const template = paragraphs[roleIndexes.education + Math.min(number - 1, 2)] || paragraphs[roleIndexes.education];
+
+  if (parts.keyLabel) {
+    return paragraphRuns(template, [
+      `${number}`,
+      ".",
+      parts.lead,
+      parts.middle,
+      "",
+      "",
+      " / ",
+      parts.keyLabel,
+      parts.after,
+    ]);
+  }
+
+  if (number === 2) {
+    return paragraphRuns(template, [" ", `${number}`, ".", parts.lead, parts.rest]);
+  }
+
+  return paragraphRuns(template, [`${number}`, ".", parts.lead, parts.rest]);
 }
 
 function paragraphsForText(template: string, text: string) {
-  const chunks = wrapText(text, 260);
-  return chunks.map((chunk) => paragraphText(template, chunk));
+  const chunks = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+  return (chunks.length ? chunks : [""]).map((chunk) => paragraphText(template, chunk));
 }
 
 function paragraphText(template: string, text: string) {
@@ -185,21 +209,53 @@ function cleanParagraph(template: string) {
     .replace(/<w:proofErr\b[^>]*\/>/g, "");
 }
 
-function wrapText(text: string, max: number) {
-  const words = text.split(/\s+/).filter(Boolean);
-  const lines: string[] = [];
-  let current = "";
-  for (const word of words) {
-    const next = current ? `${current} ${word}` : word;
-    if (next.length > max && current) {
-      lines.push(current);
-      current = word;
-    } else {
-      current = next;
-    }
+function splitEducationLine(line: string) {
+  const clean = line.replace(/^\s*\d+\s*[.)]\s*/, "").trim();
+  const keyMatch = clean.match(/^(.*?)\s*\/\s*(.*?)\s*\/\s*(Key Modules)\s*(.*)$/i);
+  if (keyMatch) {
+    return {
+      lead: keyMatch[1].trim(),
+      middle: `/${keyMatch[2].trim()}`,
+      keyLabel: keyMatch[3].trim(),
+      after: keyMatch[4].trim() ? ` ${keyMatch[4].trim()}` : "",
+      rest: "",
+    };
   }
-  if (current) lines.push(current);
-  return lines.length ? lines : [""];
+
+  const colonIndex = clean.indexOf(":");
+  if (colonIndex > -1) {
+    return {
+      lead: clean.slice(0, colonIndex).trim(),
+      rest: `: ${clean.slice(colonIndex + 1).trim()}`,
+      keyLabel: "",
+      middle: "",
+      after: "",
+    };
+  }
+
+  const commaIndex = clean.indexOf(",");
+  if (commaIndex > -1) {
+    return {
+      lead: clean.slice(0, commaIndex).trim(),
+      rest: clean.slice(commaIndex).trim(),
+      keyLabel: "",
+      middle: "",
+      after: "",
+    };
+  }
+
+  return {
+    lead: clean,
+    rest: "",
+    keyLabel: "",
+    middle: "",
+    after: "",
+  };
+}
+
+function ensureSentencePeriod(value: string) {
+  const clean = value.trim();
+  return clean && !/[.!?)]$/.test(clean) ? `${clean}.` : clean;
 }
 
 function unique(values: string[]) {

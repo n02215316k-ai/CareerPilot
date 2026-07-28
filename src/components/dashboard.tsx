@@ -30,7 +30,6 @@ import type {
   GeneratedCvRecord,
   JobListing,
   JobRecommendation,
-  JobSyncRun,
   ProjectItem,
   SessionUser,
 } from "@/lib/types";
@@ -92,11 +91,9 @@ export default function Dashboard({ user }: { user: SessionUser }) {
   const [history, setHistory] = useState<GeneratedCvRecord[]>([]);
   const [jobs, setJobs] = useState<JobListing[]>([]);
   const [recommendations, setRecommendations] = useState<JobRecommendation[]>([]);
-  const [jobSyncRuns, setJobSyncRuns] = useState<JobSyncRun[]>([]);
   const [jobsLoading, setJobsLoading] = useState(false);
   const [jobSearch, setJobSearch] = useState("");
   const [jobLocation, setJobLocation] = useState("");
-  const [jobSource, setJobSource] = useState("all");
 
   const completion = useMemo(() => profileCompleteness(profile), [profile]);
 
@@ -127,7 +124,6 @@ export default function Dashboard({ user }: { user: SessionUser }) {
     const params = new URLSearchParams({ limit: "100" });
     if (jobSearch.trim()) params.set("search", jobSearch.trim());
     if (jobLocation.trim()) params.set("location", jobLocation.trim());
-    if (jobSource !== "all") params.set("source", jobSource);
 
     try {
       const [jobsResponse, recommendationsResponse] = await Promise.all([
@@ -138,7 +134,6 @@ export default function Dashboard({ user }: { user: SessionUser }) {
       if (jobsResponse.ok) {
         const payload = await jobsResponse.json();
         setJobs(payload.jobs || []);
-        setJobSyncRuns(payload.syncRuns || []);
       } else {
         setStatus(await responseError(jobsResponse));
       }
@@ -146,7 +141,6 @@ export default function Dashboard({ user }: { user: SessionUser }) {
       if (recommendationsResponse.ok) {
         const payload = await recommendationsResponse.json();
         setRecommendations(payload.recommendations || []);
-        if (!jobSyncRuns.length) setJobSyncRuns(payload.syncRuns || []);
       }
     } catch {
       setStatus("Could not load jobs.");
@@ -376,14 +370,11 @@ export default function Dashboard({ user }: { user: SessionUser }) {
             <JobsTab
               jobs={jobs}
               recommendations={recommendations}
-              syncRuns={jobSyncRuns}
               jobsLoading={jobsLoading}
               search={jobSearch}
               setSearch={setJobSearch}
               location={jobLocation}
               setLocation={setJobLocation}
-              source={jobSource}
-              setSource={setJobSource}
               onRefresh={loadJobs}
               onUseJob={useJobForCv}
             />
@@ -701,27 +692,21 @@ function SummaryLine({ label, value }: { label: string; value: string }) {
 function JobsTab({
   jobs,
   recommendations,
-  syncRuns,
   jobsLoading,
   search,
   setSearch,
   location,
   setLocation,
-  source,
-  setSource,
   onRefresh,
   onUseJob,
 }: {
   jobs: JobListing[];
   recommendations: JobRecommendation[];
-  syncRuns: JobSyncRun[];
   jobsLoading: boolean;
   search: string;
   setSearch: (value: string) => void;
   location: string;
   setLocation: (value: string) => void;
-  source: string;
-  setSource: (value: string) => void;
   onRefresh: () => void;
   onUseJob: (job: JobListing) => void;
 }) {
@@ -748,16 +733,6 @@ function JobsTab({
                 <input className="h-10 w-full px-1 text-sm outline-none" value={location} onChange={(event) => setLocation(event.target.value)} />
               </div>
             </label>
-            <label className={labelClass}>
-              Source
-              <select className={inputClass} value={source} onChange={(event) => setSource(event.target.value)}>
-                <option value="all">All approved sources</option>
-                <option value="vacancymail">VacancyMail</option>
-                <option value="jobszimbabwe">JobsZimbabwe</option>
-                <option value="ngojobsinafrica">NGOJobsInAfrica</option>
-                <option value="reliefweb">ReliefWeb</option>
-              </select>
-            </label>
             <div className="flex flex-wrap gap-2">
               <button disabled={jobsLoading} onClick={onRefresh} className="flex h-10 items-center justify-center gap-2 bg-[#0f766e] px-3 text-sm font-semibold text-white disabled:opacity-60">
                 <RefreshCw className={`h-4 w-4 ${jobsLoading ? "animate-spin" : ""}`} /> Refresh
@@ -766,30 +741,12 @@ function JobsTab({
                 onClick={() => {
                   setSearch("");
                   setLocation("");
-                  setSource("all");
                 }}
                 className="flex h-10 items-center justify-center border border-[#cbd3dc] bg-white px-3 text-sm font-semibold"
               >
                 Clear
               </button>
             </div>
-          </div>
-        </Panel>
-
-        <Panel title="Sources" icon={<RefreshCw className="h-5 w-5" />}>
-          <div className="grid gap-3">
-            {syncRuns.length ? syncRuns.map((run) => (
-              <div key={run.id} className="border border-[#d9dee5] p-3 text-sm">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="font-semibold">{sourceLabel(run.source)}</span>
-                  <span className={`px-2 py-1 text-xs font-semibold uppercase tracking-[0.08em] ${syncStatusClass(run.status)}`}>{run.status}</span>
-                </div>
-                <p className="mt-2 text-[#53616d]">{run.jobsFound} jobs | {formatDateTime(run.finishedAt)}</p>
-                {run.message ? <p className="mt-2 text-[#25313a]">{run.message}</p> : null}
-              </div>
-            )) : (
-              <p className="text-sm text-[#677683]">No sync runs yet.</p>
-            )}
           </div>
         </Panel>
       </div>
@@ -827,10 +784,9 @@ function JobCard({ job, onUseJob }: { job: JobListing | JobRecommendation; onUse
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <h3 className="text-base font-semibold text-[#172026]">{job.title}</h3>
-          <p className="mt-1 text-sm text-[#53616d]">{[job.company, job.location].filter(Boolean).join(" | ") || sourceLabel(job.source)}</p>
+          <p className="mt-1 text-sm text-[#53616d]">{[job.company, job.location].filter(Boolean).join(" | ") || "Zimbabwe job listing"}</p>
         </div>
         <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.08em]">
-          <span className="border border-[#cbd3dc] px-2 py-1 text-[#42515c]">{sourceLabel(job.source)}</span>
           {recommendation ? <span className="border border-[#b7dfd9] bg-[#ecfdf5] px-2 py-1 text-[#0f766e]">{Math.min(recommendation.score, 100)} pts</span> : null}
         </div>
       </div>
@@ -863,7 +819,7 @@ function JobCard({ job, onUseJob }: { job: JobListing | JobRecommendation; onUse
           <Sparkles className="h-4 w-4" /> Tailor CV
         </button>
         <a href={job.url} target="_blank" rel="noreferrer" className="flex h-10 items-center justify-center gap-2 border border-[#cbd3dc] bg-white px-3 text-sm font-semibold">
-          <ExternalLink className="h-4 w-4" /> Open source
+          <ExternalLink className="h-4 w-4" /> Open job post
         </a>
       </div>
     </article>
@@ -1175,36 +1131,6 @@ function slug(value: string) {
   return (value || "careerpilot-cv").replace(/[^a-z0-9-]+/gi, "-").replace(/^-|-$/g, "").toLowerCase();
 }
 
-function sourceLabel(source: string) {
-  if (source === "vacancymail") return "VacancyMail";
-  if (source === "vacancybox") return "VacancyBox";
-  if (source === "jobszimbabwe") return "JobsZimbabwe";
-  if (source === "ngojobsinafrica") return "NGOJobsInAfrica";
-  if (source === "reliefweb") return "ReliefWeb";
-  if (source === "zimbajob") return "Zimbajob";
-  if (source === "inasi") return "iNasi";
-  return source.replace(/(^|\s)\S/g, (letter) => letter.toUpperCase());
-}
-
-function syncStatusClass(status: string) {
-  if (status === "success") return "border border-[#b7dfd9] bg-[#ecfdf5] text-[#0f766e]";
-  if (status === "error") return "border border-[#fecdd3] bg-[#fff1f2] text-[#be123c]";
-  if (status === "skipped") return "border border-[#fde68a] bg-[#fffbeb] text-[#92400e]";
-  return "border border-[#d9dee5] bg-[#f6f7f9] text-[#53616d]";
-}
-
-function formatDateTime(value: string) {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return date.toLocaleString([], {
-    year: "numeric",
-    month: "short",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-}
-
 function formatJobForTailoring(job: JobListing) {
   return [
     `Job title: ${job.title}`,
@@ -1215,8 +1141,6 @@ function formatJobForTailoring(job: JobListing) {
     job.expiresText ? `Deadline: ${job.expiresText}` : "",
     job.summary ? `Summary:\n${job.summary}` : "",
     job.description && job.description !== job.summary ? `Description:\n${job.description}` : "",
-    `Source: ${sourceLabel(job.source)}`,
-    `URL: ${job.url}`,
   ].filter(Boolean).join("\n\n");
 }
 
