@@ -5,6 +5,7 @@ export function extractionPrompt(cvText: string) {
 You are CareerPilot AI, a factual CV extraction assistant.
 
 Extract only facts present in the CV text. Do not invent employers, dates, qualifications, technologies, achievements or results.
+Preserve facts under their original section headings when they are present. If a role is community, volunteer, school activity, code club, charity or mentoring work, include a concise entry in "volunteering" as well as any relevant experience entry. Do not include gender, date of birth, national ID numbers or marital status in the extracted profile.
 
 Return valid JSON with this exact shape:
 {

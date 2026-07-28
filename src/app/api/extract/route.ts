@@ -3,8 +3,9 @@ import { NextResponse } from "next/server";
 import { errorResponse, requireUser } from "@/lib/api";
 import { logAiRequest, saveUploadedDocument } from "@/lib/db";
 import { generateGeminiJson, geminiModel } from "@/lib/gemini";
+import { extractionMissingInformation, mergeExtractedProfiles, parseCvText, repairExtractedProfile } from "@/lib/cv-text-parser";
 import { extractionPrompt } from "@/lib/prompts";
-import { normalizeProfile } from "@/lib/profile";
+import { normalizeProfile, unique } from "@/lib/profile";
 
 type ExtractionResult = {
   profile?: unknown;
@@ -29,6 +30,7 @@ export async function POST(request: NextRequest) {
     }
 
     await saveUploadedDocument(user.id, filename, extractedText.slice(0, 120000));
+    const parsedProfile = parseCvText(extractedText);
 
     let result: ExtractionResult;
     try {
@@ -36,14 +38,17 @@ export async function POST(request: NextRequest) {
       await logAiRequest(user.id, "cv-extraction", geminiModel(), true);
     } catch (error) {
       await logAiRequest(user.id, "cv-extraction", geminiModel(), false, error instanceof Error ? error.message : "AI failed");
-      result = { profile: heuristicProfile(extractedText), missingInformation: ["Review extracted details before saving."] };
+      result = { profile: parsedProfile, missingInformation: ["Review extracted details before saving."] };
     }
 
-    const extractedProfile = normalizeProfile(result.profile);
+    const extractedProfile = repairExtractedProfile(mergeExtractedProfiles(normalizeProfile(result.profile), parsedProfile));
 
     return NextResponse.json({
       extractedProfile,
-      missingInformation: Array.isArray(result.missingInformation) ? result.missingInformation : [],
+      missingInformation: unique([
+        ...(Array.isArray(result.missingInformation) ? result.missingInformation : []),
+        ...extractionMissingInformation(extractedProfile),
+      ]),
     });
   } catch (error) {
     return errorResponse(error, "Could not extract the CV.", 400);
@@ -72,37 +77,4 @@ async function extractTextFromFile(file: File) {
   }
 
   return new TextDecoder("utf-8").decode(buffer);
-}
-
-function heuristicProfile(text: string) {
-  const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
-  const email = text.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i)?.[0] || "";
-  const phone = text.match(/(?:\+?\d[\d\s().-]{7,}\d)/)?.[0] || "";
-  const skillsLine = lines.find((line) => /skills|technologies|tools/i.test(line)) || "";
-
-  return {
-    personalDetails: {
-      fullName: lines[0] || "",
-      email,
-      phone,
-      location: "",
-      linkedin: "",
-      portfolio: "",
-    },
-    targetRoles: [],
-    professionalSummary: "",
-    education: [],
-    experience: [],
-    projects: [],
-    volunteering: [],
-    skills: {
-      technical: skillsLine.split(/[:,]/).slice(1).join(",").split(",").map((item) => item.trim()).filter(Boolean),
-      tools: [],
-      soft: [],
-      languages: [],
-    },
-    certifications: [],
-    achievements: [],
-    references: "",
-  };
 }
