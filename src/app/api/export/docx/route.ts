@@ -2,6 +2,8 @@ import type { NextRequest } from "next/server";
 import { createFirstJobTemplateDocx } from "@/lib/docx-template";
 import { normalizeCvDocument } from "@/lib/profile";
 
+export const runtime = "nodejs";
+
 export async function POST(request: NextRequest) {
   const cv = normalizeCvDocument(await request.json());
   const docx = await createFirstJobTemplateDocx(cv);

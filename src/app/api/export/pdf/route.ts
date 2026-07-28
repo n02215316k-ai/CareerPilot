@@ -1,10 +1,13 @@
 import type { NextRequest } from "next/server";
-import { createCvPdf } from "@/lib/pdf";
+import { createTemplatePdf } from "@/lib/libreoffice";
 import { normalizeCvDocument } from "@/lib/profile";
+
+export const runtime = "nodejs";
 
 export async function POST(request: NextRequest) {
   const cv = normalizeCvDocument(await request.json());
-  return new Response(createCvPdf(cv), {
+  const pdf = await createTemplatePdf(cv);
+  return new Response(new Uint8Array(pdf), {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition": `attachment; filename="${safeFilename(cv.title)}.pdf"`,
