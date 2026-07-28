@@ -1,0 +1,26 @@
+services:
+  careerpilot-cv-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: careerpilot-cv-builder
+    restart: unless-stopped
+    env_file:
+      - .env
+    expose:
+      - "3000"
+    networks:
+      - proxy
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+networks:
+  proxy:
+    external: true
+  backend:
+    external: true
