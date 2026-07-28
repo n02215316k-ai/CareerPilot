@@ -5,7 +5,8 @@ type SectionKey = "header" | "summary" | "skills" | "experience" | "education" |
 type Sections = Record<SectionKey, string[]>;
 
 const monthOrYear = /(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|june|july|august|september|october|november|december|\d{4}|present|current)/i;
-const dateSeparator = /\s*(?:\u2013|\u2014)\s*|\s+(?:-|to)\s+/i;
+const dateSeparator = /\s*(?:\u2013|\u2014)\s*|\s+-\s+|\s+to\s+/i;
+const titleSeparator = /\s*(?:\u2013|\u2014)\s*|\s+-\s+/;
 const bulletPrefix = /^[\u2022\u00b7\-\u2013\u2014]\s*/;
 
 export function parseCvText(text: string): CareerProfile {
@@ -43,7 +44,7 @@ export function mergeExtractedProfiles(primary: CareerProfile, fallback: CareerP
     },
     targetRoles: unique([...primary.targetRoles.map(formatAllCapsPhrase), ...fallback.targetRoles.map(formatAllCapsPhrase)]),
     professionalSummary: chooseClean(primary.professionalSummary, fallback.professionalSummary),
-    education: mergeByKey(primary.education, fallback.education, (item) => [item.qualification, item.institution, item.startDate].join("|")),
+    education: mergeByKey(primary.education, fallback.education, educationKey),
     experience: mergeByKey(primary.experience, fallback.experience, (item) => [item.role, item.company, item.startDate].join("|")),
     projects: mergeByKey(primary.projects, fallback.projects, (item) => [item.name, item.role].join("|")),
     volunteering: unique([...primary.volunteering, ...fallback.volunteering]),
@@ -53,7 +54,7 @@ export function mergeExtractedProfiles(primary: CareerProfile, fallback: CareerP
       soft: unique([...primary.skills.soft, ...fallback.skills.soft]),
       languages: unique([...primary.skills.languages, ...fallback.skills.languages]),
     },
-    certifications: mergeByKey(primary.certifications, fallback.certifications, (item) => [item.name, item.issuer].join("|")),
+    certifications: mergeByKey(primary.certifications, fallback.certifications, certificationKey),
     achievements: unique([...primary.achievements, ...fallback.achievements]),
     references: chooseClean(primary.references, fallback.references),
   });
@@ -292,10 +293,15 @@ function parseCertifications(lines: string[]): CertificationItem[] {
   return lines
     .map(stripBullet)
     .filter(Boolean)
-    .map((line) => {
-      const [name, issuer = ""] = line.split(dateSeparator).map((part) => part.trim());
-      return { name, issuer, date: "" };
-    });
+    .flatMap((line) => {
+      const [names, issuer = ""] = line.split(titleSeparator).map((part) => part.trim());
+      return names.split(";").map((name, index) => ({
+        name: name.trim(),
+        issuer: index === 0 ? issuer : "",
+        date: "",
+      }));
+    })
+    .filter((item) => item.name);
 }
 
 function parseVolunteering(experience: ExperienceItem[], sections: Sections) {
@@ -372,6 +378,25 @@ function mergeByKey<T>(primary: T[], fallback: T[], keyFor: (item: T) => string)
     seen.add(key);
     return true;
   });
+}
+
+function educationKey(item: EducationItem) {
+  const combined = normalizeKey([item.qualification, item.field, item.institution, item.details].join(" "));
+  if (combined.includes("advanced level")) return "education:zimsec-advanced-level";
+  if (combined.includes("ordinary level")) return "education:zimsec-ordinary-level";
+  if (combined.includes("nust") || combined.includes("national university of science and technology")) {
+    const field = combined.includes("informatics") ? "informatics" : normalizeKey(item.field || item.qualification);
+    return `education:nust:${field || item.startDate || item.qualification}`;
+  }
+  return `education:${normalizeKey([item.qualification, item.field, item.institution, item.startDate].join(" "))}`;
+}
+
+function certificationKey(item: CertificationItem) {
+  return `certification:${normalizeKey([item.name, item.issuer].join(" "))}`;
+}
+
+function normalizeKey(value: string) {
+  return repairString(value).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
 function formatAllCapsPhrase(value: string) {
