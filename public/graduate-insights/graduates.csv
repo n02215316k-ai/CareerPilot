@@ -1,0 +1,953 @@
+﻿record_id,given_names,surname,full_name,faculty,programme,gender,record_type,ocr_confidence,source_image,source_row_number
+1,ee iso Puy nddon,Mak,ee iso Puy nddon Mak,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,3
+2,es ii Atwa,Mon,es ii Atwa Mon,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,2
+3,Mie ell,Much,Mie ell Much,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,19
+4,Tafa le,Janhi,Tafa le Janhi,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,4
+5,Karen,Mushongi,Karen Mushongi,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,10
+6,oFarirai Denk Hl,meine,oFarirai Denk Hl meine,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40 (1).jpeg,7
+7,Jenipha,Maraidza,Jenipha Maraidza,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,11
+8,Gerrard,Matina,Gerrard Matina,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,12
+9,Khutso Precious,Mlotshwa,Khutso Precious Mlotshwa,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,13
+10,Leeanne Panashe,Cheharawe,Leeanne Panashe Cheharawe,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,3
+11,Gugulethu Liandra,Moyo,Gugulethu Liandra Moyo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,14
+12,Prayer Nyasha,Deapasi,Prayer Nyasha Deapasi,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,5
+13,Tendai,Moyo,Tendai Moyo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,16
+14,Gamuehirai,Kabvumba,Gamuehirai Kabvumba,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,7
+15,Thelmah Madzimure aah,Misi,Thelmah Madzimure aah Misi,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,8
+16,Panashe,Mugadza,Panashe Mugadza,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,21
+17,Nothando Rose,Munemo,Nothando Rose Munemo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,22
+18,Naishea Rufaro,Ndoro,Naishea Rufaro Ndoro,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,25
+19,Rosemary Mkwananzi AOR,Nkomo,Rosemary Mkwananzi AOR Nkomo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,12
+20,Helen,Mutonono,Helen Mutonono,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,15
+21,Mbongeni,Ncube,Mbongeni Ncube,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,16
+22,Mercy,Ndiweni,Mercy Ndiweni,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,17
+23,Noxolo,Sigola,Noxolo Sigola,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,29
+24,Alfred Lekopa,Ndlovu,Alfred Lekopa Ndlovu,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,18
+25,Bekimpilo,Zidhumbu,Bekimpilo Zidhumbu,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,30
+26,Tes Rukwava of Science in,Food,Tes Rukwava of Science in Food,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,20
+27,Natalie Shumba Science and,Technology,Natalie Shumba Science and Technology,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,21
+28,Landile,Sibanda,Landile Sibanda,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,22
+29,Mechelle,Sibanda,Mechelle Sibanda,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,23
+30,Priscilla,Chakawa,Priscilla Chakawa,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,1
+31,Lian,Chamunorwa,Lian Chamunorwa,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,2
+32,Rudmonds,Tshumah-,Rudmonds Tshumah-,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,25
+33,Varaidzo,Chatikobo,Varaidzo Chatikobo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,3
+34,Yolanda,Chawabvunza,Yolanda Chawabvunza,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,4
+35,Tendai,Zhira,Tendai Zhira,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,26
+36,Sitiwe,Chiresve,Sitiwe Chiresve,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,5
+37,Petros Junior,Zimba,Petros Junior Zimba,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,27
+38,Tafadzwa,Chivasa,Tafadzwa Chivasa,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,6
+39,Nomthandazo,Dhlamini,Nomthandazo Dhlamini,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,7
+40,Jestina,Gova,Jestina Gova,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,8
+41,Clara,Gwatidzo,Clara Gwatidzo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,9
+42,Vimbai,Jomhora,Vimbai Jomhora,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,10
+43,Michelle Madamombe Il Ashley Tanaka,Kampiyawo,Michelle Madamombe Il Ashley Tanaka Kampiyawo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,1
+44,Priscilla,Mabhegedhe,Priscilla Mabhegedhe,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,12
+45,Ruvimbo,Mache,Ruvimbo Mache,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,13
+46,Godfrey Tendai,Chiremba,Godfrey Tendai Chiremba,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,4
+47,Scolastic,Madakuenda,Scolastic Madakuenda,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,14
+48,Edmore,Dhambu,Edmore Dhambu,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,5
+49,Linnet,Madondo,Linnet Madondo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,15
+50,Colleen,Gumbo,Colleen Gumbo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,6
+51,Sekai Letwin,Mahachi,Sekai Letwin Mahachi,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,16
+52,Prince,Gumbo,Prince Gumbo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,7
+53,Nyasha Memory,Mapfumo,Nyasha Memory Mapfumo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,17
+54,Wadzanai Talent,Masaire,Wadzanai Talent Masaire,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,18
+55,Tawonga Prince,Masikondo,Tawonga Prince Masikondo,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,19
+56,Laiza Mutsawashe,Katsura,Laiza Mutsawashe Katsura,Applied Science,Bachelor of Science Honours Degree in App! 11 Jenipha Maraidza “s,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.40.jpeg,9
+57,ise Mig kad,Grad,ise Mig kad Grad,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,2
+58,Lazarus Muar,ideas,Lazarus Muar ideas,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+59,inashe Gither,SURNAM,inashe Gither SURNAM,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,2
+60,pila Wonder,Mim,pila Wonder Mim,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+61,Rebedta,Mushonga,Rebedta Mushonga,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,4
+62,Bongiwe,Mush,Bongiwe Mush,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+63,MI,Ncube,MI Ncube,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+64,Michelle Mak,Ncube,Michelle Mak Ncube,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,7
+65,Nicol,Chik,Nicol Chik,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,9
+66,Sanelisiwe Andrea ee rida Asie,Chikwezvero,Sanelisiwe Andrea ee rida Asie Chikwezvero,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,7
+67,Anesu Kenneth Ne ye Bridget,Chimwe,Anesu Kenneth Ne ye Bridget Chimwe,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,48
+68,Munyaradzi,Chingono,Munyaradzi Chingono,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,2
+69,Noe,Njobo,Noe Njobo,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,71
+70,Panashe,Craig,Panashe Craig,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+71,Gugulethu Kel Nkala Meee rey,Coe,Gugulethu Kel Nkala Meee rey Coe,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,2
+72,Reetsang,Nyathi,Reetsang Nyathi,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,4
+73,Gugu Treasure,aaa,Gugu Treasure aaa,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,16
+74,Cleopatra,Nyathi,Cleopatra Nyathi,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,738
+75,Gugulethu,Hecentaiogh,Gugulethu Hecentaiogh,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,18
+76,Shumirai aa Gi,Maidza,Shumirai aa Gi Maidza,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,9
+77,Ki,Simbanai,Ki Simbanai,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,2
+78,Brandy,Munyaradzi,Brandy Munyaradzi,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,3
+79,Brandon,Masuk,Brandon Masuk,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,28
+80,Cymti,Svikiro,Cymti Svikiro,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,1
+81,Mecktilda,Midziyarova,Mecktilda Midziyarova,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,30
+82,Svdn Tadhuvana,Tanatswa,Svdn Tadhuvana Tanatswa,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,1
+83,Mellisa Takuclawa,Midziyarova,Mellisa Takuclawa Midziyarova,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,31
+84,Misheck,Mlambo,Misheck Mlambo,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,32
+85,Hillary,Moyo,Hillary Moyo,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,33
+86,Nicola Taboka,Moyo,Nicola Taboka Moyo,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,34
+87,Angelica,Mpofu,Angelica Mpofu,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,35
+88,Deligent Thaho,Mpof,Deligent Thaho Mpof,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,36
+89,Prince,Mpofu,Prince Mpofu,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,37
+90,Genius Tafudans,Mugabe,Genius Tafudans Mugabe,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41 (1).jpeg,38
+91,Peter,Thomas,Peter Thomas,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,12
+92,Regi THEM,hogs,Regi THEM hogs,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,12
+93,Zibusiso Aleon aie,arr,Zibusiso Aleon aie arr,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,15
+94,Eammore Taanisa ert isin,Dube,Eammore Taanisa ert isin Dube,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,18
+95,Charity Chest,Ganda,Charity Chest Ganda,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,17
+96,Munashe,Gasseller,Munashe Gasseller,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,18
+97,Brandon,Vhiye,Brandon Vhiye,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,20
+98,Emmanuel,Govo,Emmanuel Govo,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,20
+99,Leon Tinashe,Jemwa,Leon Tinashe Jemwa,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,24
+100,Jonathan Junior,Kakoma,Jonathan Junior Kakoma,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,3
+101,Chipo Bridget,Mabani,Chipo Bridget Mabani,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,25
+102,Bridget Nozipho,Khumalo,Bridget Nozipho Khumalo,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,4
+103,Anotida Ashton,Mabhodho,Anotida Ashton Mabhodho,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,26
+104,Makanaka,Mabobe,Makanaka Mabobe,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,27
+105,Adonis,Mache,Adonis Mache,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,28
+106,Panashe Auden,Machemedze,Panashe Auden Machemedze,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,29
+107,Tinotenda,Mafaune,Tinotenda Mafaune,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,30
+108,Maalisokuhle,Mafu,Maalisokuhle Mafu,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,31
+109,Tapiwa,Mafuuhure,Tapiwa Mafuuhure,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,32
+110,Macdonald Bennie,Manana,Macdonald Bennie Manana,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,33
+111,Moses Tatenda,Mandiruma,Moses Tatenda Mandiruma,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,34
+112,Malvin,Mangezi,Malvin Mangezi,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,35
+113,Minas,Sibonginkosi,Minas Sibonginkosi,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,6
+114,Batsirai Blessing,Manyengura,Batsirai Blessing Manyengura,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,36
+115,Bugene,Maposa,Bugene Maposa,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,37
+116,Muzi,Mbiba,Muzi Mbiba,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,39
+117,Angel Tariro,Paraiwa,Angel Tariro Paraiwa,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,11
+118,Prince Kudzai,Mhizha,Prince Kudzai Mhizha,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,40
+119,Eugene,Senza,Eugene Senza,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,12
+120,Gracious,Mbungu,Gracious Mbungu,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,41
+121,Aspect Tawanda,Moyo,Aspect Tawanda Moyo,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,42
+122,Hope,Moyo,Hope Moyo,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,43
+123,Loretta,Move,Loretta Move,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,44
+124,Sithabisile,Moyo,Sithabisile Moyo,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,45
+125,Bhekubukhosi Neue Chantaine,Mpofu,Bhekubukhosi Neue Chantaine Mpofu,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,3
+126,Natasha Ruvimbo,Botsa,Natasha Ruvimbo Botsa,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,7
+127,Sithandazite,Mpofu,Sithandazite Mpofu,Applied Science,Bachelor of Science Honours Degree in Applied 20. Emmanuel Govo ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.41.jpeg,49
+128,Drow Arehford,Meni,Drow Arehford Meni,Applied Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42 (1).jpeg,4
+129,Lown Pera,remo,Lown Pera remo,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42 (1).jpeg,7
+130,Thabani Jane,haar,Thabani Jane haar,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42 (1).jpeg,2
+131,Hy Mo ies Tim,Asipa,Hy Mo ies Tim Asipa,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42 (1).jpeg,2
+132,al Nu Nita,Moa,al Nu Nita Moa,Applied Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42 (1).jpeg,6
+133,Panashe Kaseke,Bia,Panashe Kaseke Bia,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,9
+134,Hamadzashe Chantelle,Makape,Hamadzashe Chantelle Makape,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,40
+135,Vietoria Mbewe,Boga,Vietoria Mbewe Boga,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,1
+136,at Kimberly,Moyo,at Kimberly Moyo,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,2
+137,Meee om,Ndawana,Meee om Ndawana,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,46
+138,Amanda alow erty,Njamat,Amanda alow erty Njamat,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,8
+139,Mbongeni,Ndlove,Mbongeni Ndlove,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,50
+140,Nalenhle Ndlovu Sibongisen,Nyoni,Nalenhle Ndlovu Sibongisen Nyoni,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,5
+141,Timutadzeishe,Negara,Timutadzeishe Negara,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,33
+142,Polite Prim,Toperesu,Polite Prim Toperesu,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,2
+143,pabol Lhe in,Operations,pabol Lhe in Operations,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,4
+144,Benjamina,Niyonsaba-,Benjamina Niyonsaba-,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,56
+145,Chamelle,Pharasten,Chamelle Pharasten,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,57
+146,Clybert,Chipenzi,Clybert Chipenzi,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,4
+147,Ntobcko Jubilant Siban,Munyaradzi,Ntobcko Jubilant Siban Munyaradzi,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,59
+148,Shumirai Stacey,eee,Shumirai Stacey eee,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,60
+149,Esma Tariro,Matemera,Esma Tariro Matemera,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,4
+150,Nesisa,Shaaaes,Nesisa Shaaaes,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,61
+151,Msizi Butjilo,Ndlovu,Msizi Butjilo Ndlovu,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,5
+152,Alec Tafadzwa,-Charewa,Alec Tafadzwa -Charewa,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,6
+153,Brenda Yeukai,--Chifamba,Brenda Yeukai --Chifamba,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,7
+154,Kudzai Samantha,Chikware,Kudzai Samantha Chikware,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,8
+155,Thandekile,Tee,Thandekile Tee,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,65
+156,Mayibongwe,Dube,Mayibongwe Dube,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,10
+157,Precious,Dube,Precious Dube,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,11
+158,Zibusiso,Dube,Zibusiso Dube,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,12
+159,Takudzwa,Zhira,Takudzwa Zhira,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,69
+160,Farai Michelle,Jaya,Farai Michelle Jaya,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,13
+161,Mildred,Mhaka,Mildred Mhaka,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,70
+162,Sharon,Katenda,Sharon Katenda,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,14
+163,Delight,Lamusi,Delight Lamusi,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,15
+164,Brandon,Sibanda,Brandon Sibanda,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,71
+165,Taitsi,Madhuro,Taitsi Madhuro,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,16
+166,NestahPanashe,Madziwa,NestahPanashe Madziwa,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,17
+167,Michael Tafadzwa,Magura,Michael Tafadzwa Magura,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,18
+168,Hazel Nomsa,Mablangu,Hazel Nomsa Mablangu,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,19
+169,Njabulo Itsibeteng,Makhurane,Njabulo Itsibeteng Makhurane,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,20
+170,Tadiwanashe Alice,Mandaza,Tadiwanashe Alice Mandaza,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,21
+171,Priscilla Netsai,Mapfumo,Priscilla Netsai Mapfumo,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,22
+172,fovea Chiwundo Serene Chipo,Mapuranga,fovea Chiwundo Serene Chipo Mapuranga,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,2
+173,Realebohe,Maroala,Realebohe Maroala,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,24
+174,Nigel Emmanuel Chadza os Walter Tinotenda,Masocha,Nigel Emmanuel Chadza os Walter Tinotenda Masocha,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,4
+175,Wallace Chirwa gi ee,Mberengwa,Wallace Chirwa gi ee Mberengwa,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,6
+176,Deliwe Chiven,isa,Deliwe Chiven isa,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,7
+177,Nkosinomusa,Mkandla,Nkosinomusa Mkandla,Applied Science,%... Ease Nharara pachelor of Science Honours Degree in Operation,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.42.jpeg,28
+178,Oni Dangwa ura Phe,males,Oni Dangwa ura Phe males,Environmental Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43 (1).jpeg,3
+179,Ghenai,Sumbo,Ghenai Sumbo,Environmental Science,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43 (1).jpeg,4
+180,Beis Mi,igumwa,Beis Mi igumwa,Environmental Science,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43 (1).jpeg,3
+181,ee in Medical,Ultras,ee in Medical Ultras,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,7
+182,Sharlene Shamiso,busi,Sharlene Shamiso busi,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,14
+183,sakhile Samkelisiwe Sengw ayo,pest,sakhile Samkelisiwe Sengw ayo pest,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+184,Shantel,Patil,Shantel Patil,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,15
+185,Ambitious,Chaoneka,Ambitious Chaoneka,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,2
+186,Angeline Rutendo,Coffee,Angeline Rutendo Coffee,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,4
+187,Saal,Nis,Saal Nis,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+188,Faith,Kabanda,Faith Kabanda,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,3
+189,Takudzwa Allen,ease,Takudzwa Allen ease,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,9
+190,Blessing,Res,Blessing Res,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,4
+191,John,Mulopa,John Mulopa,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,6
+192,Shirley,Fortune,Shirley Fortune,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,11
+193,Langelihle Angela,lov,Langelihle Angela lov,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,5
+194,TN,Saburi,TN Saburi,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,12
+195,Takapiwanashe Chikosha gage chart,Zhou,Takapiwanashe Chikosha gage chart Zhou,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+196,ren Mui of Science in Operations,Researsh,ren Mui of Science in Operations Researsh,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,3
+197,Dorcas Tawonga,Banda,Dorcas Tawonga Banda,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+198,James Patron,Chigugudhlo,James Patron Chigugudhlo,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,2
+199,Tafadzwa Kokerai,chauruks,Tafadzwa Kokerai chauruks,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,3
+200,Thabisile Brandon,Ndlovu,Thabisile Brandon Ndlovu,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,4
+201,Lucky,Nyathi,Lucky Nyathi,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,5
+202,Andile,Dube,Andile Dube,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+203,Prosper,Sibanda,Prosper Sibanda,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,6
+204,Yangekile,Dube,Yangekile Dube,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,2
+205,Kingstone,Sithole,Kingstone Sithole,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,7
+206,Fadeai Dzehonye,Muhwahwa,Fadeai Dzehonye Muhwahwa,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,3
+207,Peter,Maitireni,Peter Maitireni,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,4
+208,Bekezela,Mashingaidze,Bekezela Mashingaidze,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+209,Thembalethu,Khumalo,Thembalethu Khumalo,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,2
+210,Keith,Kulinga,Keith Kulinga,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,3
+211,GivasManyazo,Ngwenya,GivasManyazo Ngwenya,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,4
+212,Passmore,Vareta,Passmore Vareta,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,12
+213,Lawrence Mkhwebu poster of Philosophy,Medi,Lawrence Mkhwebu poster of Philosophy Medi,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,13
+214,Blessing Thulani,Mokwena,Blessing Thulani Mokwena,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,14
+215,Dikano,Mgnooe,Dikano Mgnooe,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+216,Cebsile Nizzie,inj,Cebsile Nizzie inj,Environmental Science,Master of Science Degree in Big rent io 5 Tinashe fae re,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.43.jpeg,1
+217,Fakudzwa GP,row,Fakudzwa GP row,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,8
+218,Dorothy,Melinda,Dorothy Melinda,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,4
+219,Untali,Naliovu,Untali Naliovu,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,14
+220,Komboni Ie,sillah,Komboni Ie sillah,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,4
+221,Sandisiwe Hezel,bie,Sandisiwe Hezel bie,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,7
+222,Tendai,Mahofa,Tendai Mahofa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,8
+223,Limakatso,Maposa,Limakatso Maposa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,10
+224,Priscilla,Marambire,Priscilla Marambire,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,11
+225,Cecil Ngoni,Zenda,Cecil Ngoni Zenda,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,20
+226,Valerie Naledi,Msekiwa,Valerie Naledi Msekiwa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,17
+227,Whitney,Mudzingwa,Whitney Mudzingwa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,20
+228,Priviledge Pamela,Chikobvu,Priviledge Pamela Chikobvu,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,2
+229,Ellinsh,Mupandawana,Ellinsh Mupandawana,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,21
+230,Rudo,Chinduru,Rudo Chinduru,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,3
+231,Brunnet,Mweneziko,Brunnet Mweneziko,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,22
+232,Tsitsi Vanessa,Chuma,Tsitsi Vanessa Chuma,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,4
+233,Forward,Dembetembe,Forward Dembetembe,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,5
+234,Memory,Ncube,Memory Ncube,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,24
+235,Nkanyiso,Dube,Nkanyiso Dube,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,6
+236,Newville Praise,Ncube,Newville Praise Ncube,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,25
+237,Lynne Gamuchirai,Gate,Lynne Gamuchirai Gate,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,2
+238,Thubelible,Rosyin-Ndhlova,Thubelible Rosyin-Ndhlova,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,26
+239,Pierre Sameh said,Geress,Pierre Sameh said Geress,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,8
+240,Quite,Ndhlovu,Quite Ndhlovu,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,27
+241,Keamogetse,Gobodi,Keamogetse Gobodi,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,9
+242,Moreblessing Lelani,Ndlovu,Moreblessing Lelani Ndlovu,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,28
+243,Ashly,Kahari,Ashly Kahari,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,11
+244,Sibonakele,Angel,Sibonakele Angel,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,30
+245,Martin,Mahlupeka,Martin Mahlupeka,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,12
+246,Mithabist,Nidwane,Mithabist Nidwane,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,31
+247,Tendai Rudo,Maki,Tendai Rudo Maki,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,13
+248,Matsidiso Natasha Nieya ih Mace,een,Matsidiso Natasha Nieya ih Mace een,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,32
+249,Chengeto Audrey,Nyamadzawo,Chengeto Audrey Nyamadzawo,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,33
+250,Gift,Apa,Gift Apa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,36
+251,Jonathan,Sianda,Jonathan Sianda,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,37
+252,Charles Innocent,Mbedzi,Charles Innocent Mbedzi,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,17
+253,Siphile Margaret,Sibanda,Siphile Margaret Sibanda,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,38
+254,Takunda Nigel,Mhandu,Takunda Nigel Mhandu,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,48
+255,Timashe Denzel Syosve Ali,Mudimba,Timashe Denzel Syosve Ali Mudimba,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,39
+256,Austin Khangelani Tshuma Tariro,Muhl,Austin Khangelani Tshuma Tariro Muhl,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,40
+257,NyheAshley,Nyamukondiwa,NyheAshley Nyamukondiwa,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,28
+258,Gondani,Kamutando,Gondani Kamutando,Environmental Science,13. Aaliyah jatavire of Science Honours Degree in 3,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.44.jpeg,6
+259,gynice Sifiso Sibanda Sydney,SURNretatt,gynice Sifiso Sibanda Sydney SURNretatt,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,3
+260,Nonsikelelo Sibanda,Florence,Nonsikelelo Sibanda Florence,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,8
+261,Gamvchirai,Tushera,Gamvchirai Tushera,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,8
+262,Cathrine,Madzana,Cathrine Madzana,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,3
+263,Ciyubunuzyo,Mudimba,Ciyubunuzyo Mudimba,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,4
+264,Marvelous,Shumba,Marvelous Shumba,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,6
+265,Taonezvi Linton,Mapasure,Taonezvi Linton Mapasure,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,2
+266,Tendai Sylvester,Mhlanga,Tendai Sylvester Mhlanga,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,2
+267,Michael Sindiso,Mlotshwa,Michael Sindiso Mlotshwa,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,4
+268,Westem,Chinaka,Westem Chinaka,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,1
+269,Luckson,Kadzani,Luckson Kadzani,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,3
+270,Phumla Balulekile,Maduma,Phumla Balulekile Maduma,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,4
+271,Ruben Tamirira,aris,Ruben Tamirira aris,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,7
+272,Knowledge,Mushonga,Knowledge Mushonga,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,9
+273,Romeo,Ndleleni,Romeo Ndleleni,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,0
+274,Gre nd Se,Satiya,Gre nd Se Satiya,Environmental Science,of Science Honours Degree in Wildlife 9 aia nae Sibanda,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.45.jpeg,13
+275,Be ed,Shaya,Be ed Shaya,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,49
+276,Comelius Dehwa pachelor of,Siete,Comelius Dehwa pachelor of Siete,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,3
+277,Digretia Ruvimbo,Chapa,Digretia Ruvimbo Chapa,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,7
+278,Frank Tarwireyi Magidi sieplien,jongal,Frank Tarwireyi Magidi sieplien jongal,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,3
+279,atswa Denzel,Mapfumo,atswa Denzel Mapfumo,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,7
+280,Violet Tatenda,Dzvuke,Violet Tatenda Dzvuke,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,12
+281,Audrey,Matabela,Audrey Matabela,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,20
+282,Progress,Gora,Progress Gora,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,13
+283,Panashe,Mazadza,Panashe Mazadza,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,21
+284,Paidamoyo Wendy,Gushu,Paidamoyo Wendy Gushu,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,14
+285,Freddie,Medzai,Freddie Medzai,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,2
+286,Kholwani,Gwebu,Kholwani Gwebu,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,15
+287,Peacemaker,Hove,Peacemaker Hove,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,16
+288,Terrance,Mnjanja,Terrance Mnjanja,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,24
+289,Tinotenda,Kanyemba,Tinotenda Kanyemba,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,17
+290,Bayisana,Moyo,Bayisana Moyo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,25
+291,Panashe Godfrey,Kariwo,Panashe Godfrey Kariwo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,18
+292,Hazel Duduzile,Moyo,Hazel Duduzile Moyo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,26
+293,EphrageTinashe,Karo,EphrageTinashe Karo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,19
+294,Innocent,Moyo,Innocent Moyo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,27
+295,Dawn,Kawanje,Dawn Kawanje,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,20
+296,Ishemunyoro,Moyo,Ishemunyoro Moyo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,28
+297,Mpumelelo,Ney,Mpumelelo Ney,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,29
+298,Michael Panashe Kumirai,bes,Michael Panashe Kumirai bes,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,22
+299,Lancelyn Thando,Mpofu,Lancelyn Thando Mpofu,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,33
+300,nga Victor,Macheyo,nga Victor Macheyo,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,6
+301,Mzingabo Jeffrey Mpofu ef Tanaka Richard,Madimutss,Mzingabo Jeffrey Mpofu ef Tanaka Richard Madimutss,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,34
+302,Collins Kurai Mutsigwa Bukhosi Talent,Magony,Collins Kurai Mutsigwa Bukhosi Talent Magony,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,36
+303,Francis Muzanago ns Tanaka,Magumise,Francis Muzanago ns Tanaka Magumise,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,37
+304,Mite Mzopah api gurira,Bach,Mite Mzopah api gurira Bach,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,9
+305,Serah-leigh Tadiwe,Nyneuim,Serah-leigh Tadiwe Nyneuim,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,43
+306,gps Golide,Mapos,gps Golide Mapos,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,35
+307,Leeroy Tongai,Nyakura,Leeroy Tongai Nyakura,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,44
+308,Ted Fadzai,Marowa,Ted Fadzai Marowa,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,36
+309,Kudakwashe Hemish Nyamakan Rawr fanashe Brian,Masaiti,Kudakwashe Hemish Nyamakan Rawr fanashe Brian Masaiti,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,45
+310,Precious Nyarai,Nyamukunda,Precious Nyarai Nyamukunda,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,47
+311,Shadreck Oath,Nevengende,Shadreck Oath Nevengende,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.46.jpeg,48
+312,Ligwa,Taduation,Ligwa Taduation,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,6
+313,ickolia Nkosikhona Moy kesiphite simi,Dub,ickolia Nkosikhona Moy kesiphite simi Dub,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,review,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,4
+314,Pmatent Newar,Dut,Pmatent Newar Dut,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,9
+315,Tino,Makeast,Tino Makeast,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,12
+316,Mtenda Eanah,Mapepeta,Mtenda Eanah Mapepeta,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,4
+317,Brendon Amold,ype,Brendon Amold ype,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,review,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,17
+318,Metin,Mkandawine,Metin Mkandawine,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,18
+319,Michael Makes ni eee,hts,Michael Makes ni eee hts,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,review,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,3
+320,Nongesbo Valentine,Nélovn,Nongesbo Valentine Nélovn,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,35
+321,Supe,Nyakunuw,Supe Nyakunuw,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,26
+322,Ee,Nyakeurin,Ee Nyakeurin,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,7
+323,Pardon,Rasdctie,Pardon Rasdctie,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,28
+324,Gracious,Runyanga,Gracious Runyanga,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,29
+325,Albert Manorvei,Signe,Albert Manorvei Signe,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,31
+326,Knowledge,Soe,Knowledge Soe,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,32
+327,Linda,Esai,Linda Esai,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,34
+328,Ngonidzashe,Chipiro,Ngonidzashe Chipiro,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,3
+329,Taurai Nickey,Gondo,Taurai Nickey Gondo,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,5
+330,Tapiwa Anna,Guzha,Tapiwa Anna Guzha,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,6
+331,Michael Kudakwashe,Kuseka,Michael Kudakwashe Kuseka,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,7
+332,Talent Violet,London,Talent Violet London,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,8
+333,Hardlife Tafadewa,Madzimare,Hardlife Tafadewa Madzimare,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,5
+334,Cliff,Mafirakureva,Cliff Mafirakureva,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,10
+335,Christopher,Magwati,Christopher Magwati,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,11
+336,Aldrins Maibongwe,Malisa,Aldrins Maibongwe Malisa,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,13
+337,Ihe Cecil,Manangazira,Ihe Cecil Manangazira,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,13
+338,Richard,Masensdeke,Richard Masensdeke,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,14
+339,Tanaka,Matapura,Tanaka Matapura,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,15
+340,Chido Nigel,Matsenga,Chido Nigel Matsenga,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,16
+341,Cryvose,Mazai,Cryvose Mazai,Engineering,"Technology Honours Degree in Waler 10, Cliff Mafirakureva",,graduate,high,WhatsApp Image 2026-09-19 at 12.43.47.jpeg,17
+342,Nicholas NichoW yah Kewe,Chaba,Nicholas NichoW yah Kewe Chaba,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,19
+343,Douglas Tafidw ree Ian es,Chin,Douglas Tafidw ree Ian es Chin,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,20
+344,Precious,Mach,Precious Mach,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,3
+345,Edwin,Dani,Edwin Dani,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,2
+346,Sijabulile,Musii,Sijabulile Musii,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,1
+347,Wellington nets Be,Ncube,Wellington nets Be Ncube,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,4
+348,Prudence,Njov,Prudence Njov,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,9
+349,Tendai La,yack,Tendai La yack,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,10
+350,Mbongeni,Lubambo,Mbongeni Lubambo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,9
+351,Cedric,Zvavam,Cedric Zvavam,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,13
+352,Moses,Mangache,Moses Mangache,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,14
+353,Tadiwanashe Asher,Maidza,Tadiwanashe Asher Maidza,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,2
+354,Pride,Utah,Pride Utah,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,15
+355,Nyasha Duncan,Masaire,Nyasha Duncan Masaire,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,3
+356,Mitchell,Matasva-,Mitchell Matasva-,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,4
+357,Ngobizitha Mon ration with,TelOne,Ngobizitha Mon ration with TelOne,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,7
+358,Philemon Moyo,SURNAM,Philemon Moyo SURNAM,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,8
+359,Talent Moot fi Masimba,Bomhira,Talent Moot fi Masimba Bomhira,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,9
+360,Gif Miisi,Seal,Gif Miisi Seal,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,20
+361,Shalom,Chara,Shalom Chara,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,2
+362,Craig Tanaka,Mushonga,Craig Tanaka Mushonga,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,22
+363,Tonderai Headma Mutomba,Tinotenda,Tonderai Headma Mutomba Tinotenda,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,23
+364,Michael,Jaidi,Michael Jaidi,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,4
+365,Mvusclelo Ntando Ndhlova oF Ohright Shingirirai,Jaji,Mvusclelo Ntando Ndhlova oF Ohright Shingirirai Jaji,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,25
+366,Brezhnev Peterven,Ndlovu,Brezhnev Peterven Ndlovu,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,26
+367,Kelly Anesu,Josi,Kelly Anesu Josi,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,6
+368,Hilton Prince Ndlovu is Enos,Mafuke,Hilton Prince Ndlovu is Enos Mafuke,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,21
+369,Michael,Ndlovu,Michael Ndlovu,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,28
+370,Nyaradzai,Makanga,Nyaradzai Makanga,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,8
+371,Elvis Nhanho Best,Makwindi,Elvis Nhanho Best Makwindi,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,29
+372,Anotendwa,Mavuka,Anotendwa Mavuka,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,10
+373,Gracious Tinotenda,Mudondo,Gracious Tinotenda Mudondo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,1
+374,Kudzal Nyantees Brandon Chalyetezya,Muleya,Kudzal Nyantees Brandon Chalyetezya Muleya,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,33
+375,Leon,Shara,Leon Shara,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,8
+376,Ties Boas Hs Lorraine Tsitsi,Sibanda,Ties Boas Hs Lorraine Tsitsi Sibanda,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,36
+377,Taboka Fanuel Sialumba Ebenezer,Msipa,Taboka Fanuel Sialumba Ebenezer Msipa,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,37
+378,Sidney Sibenda MA NLlOt Of Engineering,Deg,Sidney Sibenda MA NLlOt Of Engineering Deg,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,29
+379,Emelta Tigere nd Polymer Materias,ergineering,Emelta Tigere nd Polymer Materias ergineering,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,40
+380,Clayton,Toma,Clayton Toma,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,41
+381,Tukunda Miracle,Tyika,Tukunda Miracle Tyika,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,42
+382,Sharot,Manyedz,Sharot Manyedz,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,1
+383,Komborero Johnson Wazadza,Youn,Komborero Johnson Wazadza Youn,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,43
+384,Bamabas Mandifadza Zavave Tiptse Brian,eve,Bamabas Mandifadza Zavave Tiptse Brian eve,Engineering,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,44
+385,Pettonelta,Ncube,Pettonelta Ncube,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.48.jpeg,6
+386,Cheryl Victor ation,Corey,Cheryl Victor ation Corey,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,49
+387,Scares,Phi,Scares Phi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,087
+388,omegaRumbidzai Chiduku,Maliisi,omegaRumbidzai Chiduku Maliisi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,1
+389,qanyaradzwa Peter,Chigumbura,qanyaradzwa Peter Chigumbura,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+390,Thabo,Sibanda,Thabo Sibanda,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,3
+391,Brighton Tatenda Chikomo Andrew,yaaa,Brighton Tatenda Chikomo Andrew yaaa,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,4
+392,ererai John,Chirere,ererai John Chirere,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,4
+393,Kagiso Prd,Tah,Kagiso Prd Tah,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,5
+394,Tummigamuchirashe,Zhan,Tummigamuchirashe Zhan,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,6
+395,Walter,Piste,Walter Piste,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,1
+396,Clifford,Chimbarshiw,Clifford Chimbarshiw,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,3
+397,Edward,Katenhs,Edward Katenhs,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,5
+398,Kudakwashe,Mabaudhi,Kudakwashe Mabaudhi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,7
+399,Derek Tatenda,Makirayi,Derek Tatenda Makirayi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,6
+400,Ruvimbo,Majongwe,Ruvimbo Majongwe,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,13
+401,Vimbainashe,Mudadi,Vimbainashe Mudadi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,8
+402,Vushe Elias,Nhengu,Vushe Elias Nhengu,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,9
+403,Marshal,Manhivi,Marshal Manhivi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+404,Dumusani,Samambwa,Dumusani Samambwa,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,10
+405,Prince Tadiwa,Maphosa,Prince Tadiwa Maphosa,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+406,Joseph,Chirume,Joseph Chirume,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,11
+407,Tadiwanashe Mashapa of Engineering in Chemical,and,Tadiwanashe Mashapa of Engineering in Chemical and,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,4
+408,Mufaro Peace,Mayterah,Mufaro Peace Mayterah,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,7
+409,Cleopatra,Dube,Cleopatra Dube,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,1
+410,Munyaradzi Mitchell,Kaige,Munyaradzi Mitchell Kaige,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+411,Yankho Mgona of sls Sap,hias,Yankho Mgona of sls Sap hias,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,3
+412,Victor Mondliwethu,Sil,Victor Mondliwethu Sil,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,5
+413,Tinomuvonga,Zhou,Tinomuvonga Zhou,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,6
+414,Bothwell Anold Mpof of Engineering in,Manufacturing,Bothwell Anold Mpof of Engineering in Manufacturing,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,5
+415,Ta,Mukuwe,Ta Mukuwe,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,0
+416,Bison,Goce,Bison Goce,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,1
+417,Miriam,Siyapi,Miriam Siyapi,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+418,Charles Shep,ase,Charles Shep ase,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,1
+419,Ae,Mukurunge,Ae Mukurunge,Engineering,4 Tadiwanashe Mashapa Master of Engineering Degree in Chemical and,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.49.jpeg,2
+420,Rutendo Snetty,Chifinyise,Rutendo Snetty Chifinyise,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,1
+421,Evans Kennedy,Chikumba,Evans Kennedy Chikumba,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,2
+422,Dylan Kudakwashe,Chiromo,Dylan Kudakwashe Chiromo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,3
+423,Chrispen Fungai,Dzimunwe,Chrispen Fungai Dzimunwe,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,4
+424,Adiola,Jerera,Adiola Jerera,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,5
+425,Siphiwe,Mareya,Siphiwe Mareya,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,6
+426,Isheanesu Happiness,Mugabe,Isheanesu Happiness Mugabe,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,2
+427,Sikhathele,Nkomo,Sikhathele Nkomo,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,8
+428,Tasiya Collin,Tapi,Tasiya Collin Tapi,Engineering,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.50.jpeg,0
+429,Ghido Roselyn,Chingwere,Ghido Roselyn Chingwere,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,1
+430,Natasha,Gunda,Natasha Gunda,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,3
+431,Booker Nkosilathi,Khanye,Booker Nkosilathi Khanye,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,4
+432,Francis,Masui,Francis Masui,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,6
+433,Keith,Mpofi,Keith Mpofi,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,4
+434,Meliisa,Mugari,Meliisa Mugari,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,2
+435,Evidence Tukombe,Muleya,Evidence Tukombe Muleya,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,21
+436,Saidi Leeford,Mwachuma,Saidi Leeford Mwachuma,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,2
+437,Nesisa,Ndlovu,Nesisa Ndlovu,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,4
+438,Thandolwenkosi,Dlamini,Thandolwenkosi Dlamini,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,1
+439,Gilda Josephine,Dodzo,Gilda Josephine Dodzo,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,2
+440,Moreblessing,Mapfumo,Moreblessing Mapfumo,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,5
+441,Nothando,Ncube,Nothando Ncube,Medicine,Master of Science Degree in Midwifery Education,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.52.jpeg,2
+442,Tanaka Silas ana eo Pride,ive,Tanaka Silas ana eo Pride ive,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,1
+443,Faith Rumbidzai,iwi,Faith Rumbidzai iwi,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,2
+444,Tinokudzaishe Harold Chiwarit ae,fakac,Tinokudzaishe Harold Chiwarit ae fakac,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,3
+445,Tacliwanashe Shelton,Jeke,Tacliwanashe Shelton Jeke,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,6
+446,Emmaculate,Jongwe,Emmaculate Jongwe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,7
+447,Paul,Mites,Paul Mites,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,57
+448,Joseph Farai,Kabaza,Joseph Farai Kabaza,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,8
+449,Kudzaishe,Walon,Kudzaishe Walon,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,58
+450,Tafadzwa Bezzel,Kakunguwo,Tafadzwa Bezzel Kakunguwo,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,9
+451,Logic Lazarus,eae,Logic Lazarus eae,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,10
+452,Kumbirai Nellie Mafume helor of Science,tex,Kumbirai Nellie Mafume helor of Science tex,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,12
+453,Muziwandile Magagula beats,Management,Muziwandile Magagula beats Management,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,13
+454,Prosper Pinnace,Magoho,Prosper Pinnace Magoho,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,14
+455,Boniface Takudzwa Makukutu arrive,eines,Boniface Takudzwa Makukutu arrive eines,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,15
+456,Brenda Varaidzo,Maraura,Brenda Varaidzo Maraura,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,16
+457,Gamaliel,Mashandika,Gamaliel Mashandika,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,17
+458,Jacob,Chibwidze,Jacob Chibwidze,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,3
+459,Promise Akim,Mazenge,Promise Akim Mazenge,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,18
+460,Admire Anele,oie,Admire Anele oie,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,4
+461,Sarah,Mbiri,Sarah Mbiri,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,19
+462,Nhamodzinesu,Mkondo,Nhamodzinesu Mkondo,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,20
+463,Shyleen Nontokezo,Mlotshwa,Shyleen Nontokezo Mlotshwa,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,21
+464,Alex,Chindundundu,Alex Chindundundu,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,7
+465,Kuzivakwashe,Mpopoti,Kuzivakwashe Mpopoti,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,22
+466,Chido,Chirambiwa,Chido Chirambiwa,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,8
+467,Kelmaur Sarah,Mudau,Kelmaur Sarah Mudau,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,23
+468,Farisai Marygold,Chiweshe,Farisai Marygold Chiweshe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,9
+469,Panashe,Mudzoka,Panashe Mudzoka,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,24
+470,Tendai Eddington,Dengu,Tendai Eddington Dengu,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,10
+471,Panashe,Mufundirwa,Panashe Mufundirwa,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,25
+472,Emmanuel Donono,Bac,Emmanuel Donono Bac,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,11
+473,Daniel Tanyaradzwa,Museva,Daniel Tanyaradzwa Museva,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,26
+474,Muziwandile Dube,Dev,Muziwandile Dube Dev,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,12
+475,Neville,Musvibe,Neville Musvibe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,27
+476,Zanele,Dube,Zanele Dube,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,13
+477,Takunda Michael,Mutewera,Takunda Michael Mutewera,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,28
+478,Emmanuel Richwell Mutsapata is oon Tanaka,Gwata,Emmanuel Richwell Mutsapata is oon Tanaka Gwata,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,29
+479,Arthur Anesu,Mutseka,Arthur Anesu Mutseka,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,30
+480,Ritdakewashe,Hamandishe,Ritdakewashe Hamandishe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,16
+481,Tawanda Charles,Mutukumira,Tawanda Charles Mutukumira,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,31
+482,Tinatswe Adrian Muzondo Teen,Madzingo,Tinatswe Adrian Muzondo Teen Madzingo,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,32
+483,Vuyisile Re cardo,Ncube,Vuyisile Re cardo Ncube,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,33
+484,OR inda,Mafemba,OR inda Mafemba,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,1
+485,Siphiwo Tariro,Nkala,Siphiwo Tariro Nkala,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,34
+486,eunion Takawira,Magwala,eunion Takawira Magwala,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,20
+487,Donald Bongani Nyabadza Romeo Rashidie,Makombe,Donald Bongani Nyabadza Romeo Rashidie Makombe,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,35
+488,Walter Kudakwashe Nyamusakura By Tyrone Tavonga,Makoni,Walter Kudakwashe Nyamusakura By Tyrone Tavonga Makoni,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,36
+489,Tanaka Jonathan Nyanhanda Tapiwa,Makwangudze,Tanaka Jonathan Nyanhanda Tapiwa Makwangudze,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,37
+490,Raul,San,Raul San,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,38
+491,Akudz,Shoko,Akudz Shoko,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,39
+492,Ponti,Manne,Ponti Manne,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,4
+493,Neer Simbarashe,Maribinya,Neer Simbarashe Maribinya,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,26
+494,KuDskwashe Sean,atest,KuDskwashe Sean atest,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,35
+495,Astam,Mazhungs,Astam Mazhungs,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,30
+496,Ngonidzashe Leroy,Tetai,Ngonidzashe Leroy Tetai,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,45
+497,Pringe,Mbwambw,Pringe Mbwambw,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,31
+498,Craig Butho,Wadawu,Craig Butho Wadawu,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,46
+499,Mthabisi,Mhindukws,Mthabisi Mhindukws,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,32
+500,Nkosentsha Bova,Zitha,Nkosentsha Bova Zitha,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,47
+501,Lunganj,Mhlanga,Lunganj Mhlanga,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,33
+502,Muna,Mkwebu,Muna Mkwebu,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.56.jpeg,34
+503,Terence Kone,Gere,Terence Kone Gere,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,21
+504,Rediotg Aut Gund,mony,Rediotg Aut Gund mony,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,22
+505,Noun,Kashambe,Noun Kashambe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,2
+506,Kimberly Rumbidzai wae el ating,tae,Kimberly Rumbidzai wae el ating tae,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,2
+507,Jere Nomisa,Makura,Jere Nomisa Makura,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,28
+508,Fiedu,Mangena,Fiedu Mangena,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,39
+509,uramai Nadine Rae hee,Manyara,uramai Nadine Rae hee Manyara,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,6
+510,Se Wisdoo,Rambo,Se Wisdoo Rambo,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,4
+511,Heat,Moyo,Heat Moyo,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,40
+512,Nyaradzo,Cine,Nyaradzo Cine,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,3
+513,Gamuchirai Ele,heeeo,Gamuchirai Ele heeeo,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,42
+514,NB At,Ncube,NB At Ncube,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,2
+515,Biikomborero Chakauye eal,Nes,Biikomborero Chakauye eal Nes,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,5
+516,Rare,Ngwenya,Rare Ngwenya,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,56
+517,Shingirirai Maite,Punungwe,Shingirirai Maite Punungwe,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,60
+518,Ashley,Rutaya,Ashley Rutaya,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,61
+519,Brendon rowedzerwa,Shure,Brendon rowedzerwa Shure,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,62
+520,Bukhosi Hope,Sibanda,Bukhosi Hope Sibanda,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,63
+521,Prisca Bublebenkos,Sibanda,Prisca Bublebenkos Sibanda,Built Environment,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,4
+522,Nozinhle Yolanda,sibanda,Nozinhle Yolanda sibanda,Built Environment,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.57.jpeg,3
+523,Nol,Matambwe,Nol Matambwe,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,3
+524,Devout Jol,Matebwe,Devout Jol Matebwe,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,54
+525,Talent,Matsika,Talent Matsika,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,55
+526,Simon Peter,Chas,Simon Peter Chas,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,3
+527,Walter Zivan,Mhako,Walter Zivan Mhako,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,38
+528,Atherby tious Mhene,iil,Atherby tious Mhene iil,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,59
+529,Priscilla Tin,Chikwama,Priscilla Tin Chikwama,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,5
+530,Shep adil,Mblanga,Shep adil Mblanga,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,60
+531,Malvern er tartha,Chimbetete,Malvern er tartha Chimbetete,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,6
+532,Melody,Mhlanga,Melody Mhlanga,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,61
+533,Anostaige Me,chimbunde,Anostaige Me chimbunde,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,7
+534,Takunda,Miandulwa,Takunda Miandulwa,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,2
+535,Mekisedeky ha,Chirima,Mekisedeky ha Chirima,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,8
+536,Layson Thabo,Morsi,Layson Thabo Morsi,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,6
+537,pices rr Chiripanyanga Ga Peter Joe,fae,pices rr Chiripanyanga Ga Peter Joe fae,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,9
+538,Dat Tapivanashe,Chisngo,Dat Tapivanashe Chisngo,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,10
+539,taacTaende Chee Mafra,Mubsyi,taacTaende Chee Mafra Mubsyi,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,13
+540,Nakai Wayne,Dae,Nakai Wayne Dae,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,9
+541,Munyaradzi,NETS,Munyaradzi NETS,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,74
+542,Prosper Tadiwanashe,Gari,Prosper Tadiwanashe Gari,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,22
+543,ProsperAnesu,Gabiatl,ProsperAnesu Gabiatl,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,23
+544,Tefadewa,Muna,Tefadewa Muna,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,16
+545,Panashe Gloria,Munem,Panashe Gloria Munem,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,77
+546,Michel Taro,Munetsi,Michel Taro Munetsi,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,78
+547,Kandaowashe,Viti,Kandaowashe Viti,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,27
+548,Francis,Mupamha,Francis Mupamha,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,80
+549,Claudious,Muser,Claudious Muser,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,83
+550,Tinofadzwa Liliosa,Mutaikwa,Tinofadzwa Liliosa Mutaikwa,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,84
+551,Kelvin Tafara,nice,Kelvin Tafara nice,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,85
+552,Brandon,Mutewera,Brandon Mutewera,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,87
+553,Lindelwe,Khumalo,Lindelwe Khumalo,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,37
+554,Wesley,Mutsvang,Wesley Mutsvang,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,89
+555,Bridges,Khumato,Bridges Khumato,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,38
+556,Clyde,Mauls,Clyde Mauls,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,90
+557,Rumbidzas,Machokoto,Rumbidzas Machokoto,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,39
+558,Kudzai Oswald,Mutuvi,Kudzai Oswald Mutuvi,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,91
+559,Denis James,Madzivanyika,Denis James Madzivanyika,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,40
+560,Tendai Michel,Mayo,Tendai Michel Mayo,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,41
+561,Nobandile Primrose,Ncube,Nobandile Primrose Ncube,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,93
+562,Kudzaiishe Faith,Magodo,Kudzaiishe Faith Magodo,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,42
+563,Ri,Ncube,Ri Ncube,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,4
+564,Shamsias,Makendenge,Shamsias Makendenge,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,43
+565,Sibonginkosi,Ncube,Sibonginkosi Ncube,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,95
+566,Everjoy Unity Makiyi,Thembela,Everjoy Unity Makiyi Thembela,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,44
+567,Farai'Tawedzerwa Makonese Si,Ncube,Farai'Tawedzerwa Makonese Si Ncube,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,45
+568,Fikile,Ndlovu,Fikile Ndlovu,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,97
+569,Thembinkosi,Ndlovw,Thembinkosi Ndlovw,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,98
+570,Munamato Maradza we Nobleman,Nauk,Munamato Maradza we Nobleman Nauk,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,49
+571,Benjamin Tariro,Nyakuwam,Benjamin Tariro Nyakuwam,Built Environment,Degree in Qu 52. bert Sheanesu ol 1 N,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.58.jpeg,101
+572,Tiamsanga,Kare,Tiamsanga Kare,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,12
+573,Clive Thun,frit,Clive Thun frit,Built Environment,Weare Degree in Construction Project,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,18
+574,Clive Tara,Mesumingre,Clive Tara Mesumingre,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,5
+575,Godlee,Moyo,Godlee Moyo,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,20
+576,jakudzwa Angeline,Marj,jakudzwa Angeline Marj,Built Environment,Weare Degree in Construction Project,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,23
+577,Epinanee,Note,Epinanee Note,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,28
+578,Mabwazara es,Nyambuya,Mabwazara es Nyambuya,Built Environment,Weare Degree in Construction Project,,graduate,review,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,7
+579,Jacob Castone,Padera,Jacob Castone Padera,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,4
+580,Tanatsirwa Natasha,Sigauke,Tanatsirwa Natasha Sigauke,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,2
+581,Prince,Kudzai,Prince Kudzai,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,3
+582,He,Tose,He Tose,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,35
+583,Fungai Jnr,Mbetsa,Fungai Jnr Mbetsa,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,1
+584,Sibusiso,Nyathi,Sibusiso Nyathi,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,3
+585,Dalumuzi,Sibanda,Dalumuzi Sibanda,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,4
+586,Visam Rodney,Silempa,Visam Rodney Silempa,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,5
+587,Dennis,Tshuma,Dennis Tshuma,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,6
+588,Memory,Chipiro,Memory Chipiro,Built Environment,Weare Degree in Construction Project,,graduate,high,WhatsApp Image 2026-09-19 at 12.43.59.jpeg,5
+589,Mist idzai Ghee,oie,Mist idzai Ghee oie,Science and Technology Education,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (1).jpeg,4
+590,ie Ja,RNAME,ie Ja RNAME,Science and Technology Education,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (1).jpeg,3
+591,Bongani hanover,Chemistry,Bongani hanover Chemistry,Science and Technology Education,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (1).jpeg,2
+592,Davison Chimunhu,Bernager,Davison Chimunhu Bernager,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+593,Georgina,Chauke,Georgina Chauke,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+594,Christine Tinotenda,Denya,Christine Tinotenda Denya,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,2
+595,Sibongumust,Dlamini,Sibongumust Dlamini,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,3
+596,Sofia Bridget Muchavaka pe,Hlangabeza,Sofia Bridget Muchavaka pe Hlangabeza,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,7
+597,Primrose Carol Shanana Satkabs end,Techno,Primrose Carol Shanana Satkabs end Techno,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,10
+598,Tafara Marambire,mee,Tafara Marambire mee,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+599,Phillip,Gunguve,Phillip Gunguve,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+600,Collen Tamuka,-Majaya,Collen Tamuka -Majaya,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,2
+601,Prosper,Vareta,Prosper Vareta,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,4
+602,Joanna Belladona,Change,Joanna Belladona Change,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+603,Sambulo,Ncube,Sambulo Ncube,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+604,Hlanganani Dube,Ria,Hlanganani Dube Ria,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,2
+605,Robnison,Nechombo,Robnison Nechombo,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,2
+606,Sithabisiwe,Gadiula,Sithabisiwe Gadiula,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,3
+607,Tariraishe Kadenhe,Tee,Tariraishe Kadenhe Tee,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,4
+608,Revolution,Kufahakurotwi,Revolution Kufahakurotwi,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,5
+609,Thandolwenkosi,Mguni,Thandolwenkosi Mguni,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,6
+610,Brilliant,Dube,Brilliant Dube,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+611,Sanctiso Dube eee,Saad,Sanctiso Dube eee Saad,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,2
+612,Pai,Marimo,Pai Marimo,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,3
+613,Towanda,Chimuka,Towanda Chimuka,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+614,Ee,Silbanda,Ee Silbanda,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+615,Rose,AME,Rose AME,Science and Technology Education,"Master of Science Education Degree in Comp"" Fechnical oo SURNAME 5 | """,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00 (2).jpeg,1
+616,Bukhosi,Nkiwane,Bukhosi Nkiwane,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,10
+617,Mebluli,Phiri,Mebluli Phiri,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,11
+618,Rumbidzai,Rongai,Rumbidzai Rongai,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,12
+619,Bale Amanda,Chimoyo,Bale Amanda Chimoyo,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,1
+620,Thapelo,Sibanda,Thapelo Sibanda,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,13
+621,Kudakwashe,Chinyanganya,Kudakwashe Chinyanganya,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,2
+622,Sibusisiwe,Siphuma,Sibusisiwe Siphuma,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,14
+623,Vagmarid Sheriff,Kweshe,Vagmarid Sheriff Kweshe,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,3
+624,Shalin Samukelisiwe,Thebe,Shalin Samukelisiwe Thebe,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,15
+625,Muzikayise,Moyo,Muzikayise Moyo,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,4
+626,Patience Nomazulu,Gumbo,Patience Nomazulu Gumbo,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,1
+627,Sanele,Mafikela,Sanele Mafikela,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,2
+628,Pamela,Munetsi,Pamela Munetsi,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,3
+629,Sukoluhle,Ndlovu,Sukoluhle Ndlovu,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,4
+630,Babson,Ngwenya,Babson Ngwenya,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,5
+631,Primrose,Dewe,Primrose Dewe,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,4
+632,Tinashe,Pianosi,Tinashe Pianosi,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,7
+633,Joanna Sipiwe,Jaricha,Joanna Sipiwe Jaricha,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,6
+634,Kupakwashe,Shoko,Kupakwashe Shoko,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,8
+635,Erick Tapiwa,Shumba,Erick Tapiwa Shumba,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,9
+636,poration Joy,Dube,poration Joy Dube,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,5
+637,Tapera Lovemore Gumbo See,Tinya,Tapera Lovemore Gumbo See Tinya,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,3
+638,Zodwa Manyatela Oe,Kuyeri,Zodwa Manyatela Oe Kuyeri,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,4
+639,Thubalenkosi Matshilana si Siduduzile,Thies,Thubalenkosi Matshilana si Siduduzile Thies,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,5
+640,Ntombiyokuthula,Sandra,Ntombiyokuthula Sandra,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,6
+641,Samantha,Siband,Samantha Siband,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,11
+642,Primro,Moyo,Primro Moyo,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,14
+643,AO,Nae,AO Nae,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,1
+644,First,Mpofu,First Mpofu,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,18
+645,Christoph,Muleya,Christoph Muleya,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,19
+646,Mien,Mupandawana,Mien Mupandawana,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,2
+647,Kodawashe Arthur,Gone,Kodawashe Arthur Gone,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,3
+648,Thandeka,Musandipa,Thandeka Musandipa,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,21
+649,Mitchell,Myubu,Mitchell Myubu,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,4
+650,Precious,Sikhulekile,Precious Sikhulekile,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,5
+651,Thambelénk,Ncube,Thambelénk Ncube,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,23
+652,Miungisi sini,Ncube,Miungisi sini Ncube,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,24
+653,Patien,Mpofu,Patien Mpofu,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,8
+654,Nigel Mthokozisi,Ndebele,Nigel Mthokozisi Ndebele,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,25
+655,Albert ozisi,Ndiweni,Albert ozisi Ndiweni,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,26
+656,Magnificant,Ndlovu,Magnificant Ndlovu,Science and Technology Education,Honours Degree in Applied Art and Design 11. Mebluli Phiri,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.00.jpeg,27
+657,Anesu Hazel Masocha Communication SURNAM,aes,Anesu Hazel Masocha Communication SURNAM aes,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+658,Tanyaradzwa,Milione,Tanyaradzwa Milione,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,4
+659,Ruth Rudorwashe Munyacd,Maudline,Ruth Rudorwashe Munyacd Maudline,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,5
+660,Simelokuhle,Nkala,Simelokuhle Nkala,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,6
+661,Tabita Enis,Pomerat,Tabita Enis Pomerat,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,7
+662,Thandckite el Michelle Nontoko,Mulino,Thandckite el Michelle Nontoko Mulino,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,9
+663,Senieaet yy Bares,Sibanda,Senieaet yy Bares Sibanda,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,1
+664,Mandla,Khumalo,Mandla Khumalo,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,3
+665,Tanaka Trish,Muchabaiwa,Tanaka Trish Muchabaiwa,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,4
+666,Sheron Rose,Mugombi,Sheron Rose Mugombi,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,5
+667,Mthulisi,Ncube,Mthulisi Ncube,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,6
+668,Bublebenkosi,Sibanda,Bublebenkosi Sibanda,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,15
+669,Amolitor,Ndatswa,Amolitor Ndatswa,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+670,Natasha,Takura,Natasha Takura,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,16
+671,Adrina Sibanda Information,Science,Adrina Sibanda Information Science,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,9
+672,Cecil Tanaka,Simbi,Cecil Tanaka Simbi,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,10
+673,Thelma,Chikore,Thelma Chikore,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,1
+674,Bhekimpilo,Tshalibe,Bhekimpilo Tshalibe,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,11
+675,Maryjain,Chisita,Maryjain Chisita,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+676,Prince Leroy,Moyo,Prince Leroy Moyo,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,12
+677,Present,Hlambelo,Present Hlambelo,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,3
+678,Thabisani Dube fi ee Nodumo,Mhlanga,Thabisani Dube fi ee Nodumo Mhlanga,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,1
+679,Patience Duduzile,Nxumalo,Patience Duduzile Nxumalo,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+680,Takudzwa,Manzero,Takudzwa Manzero,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+681,Audrey,Chitere,Audrey Chitere,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,2
+682,Ry ie,Gumbo,Ry ie Gumbo,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,3
+683,Manes Rachel,Hlabangana,Manes Rachel Hlabangana,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,4
+684,Allee,Messe,Allee Messe,Communication and Information Science,32“ Graduation Ceremony Master of Seience Degree in Strategic = ; ;,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (1).jpeg,4
+685,Shamiso Mic sc,remony,Shamiso Mic sc remony,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,50
+686,passe Sesh BVA,Tadhg,passe Sesh BVA Tadhg,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,5
+687,vata Taste,Chakacha,vata Taste Chakacha,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,4
+688,Prince,Ndtkwana,Prince Ndtkwana,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,57
+689,incess Amanda,Ncube,incess Amanda Ncube,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,58
+690,Nombuleto Ni,Neus,Nombuleto Ni Neus,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,8
+691,Darlington hen Tikudzwa,Ndlowu,Darlington hen Tikudzwa Ndlowu,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,43
+692,Olwethu,Neite,Olwethu Neite,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,60
+693,Zibusiso,Nhoda,Zibusiso Nhoda,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,82
+694,Sophia Isabel ke ra,ree,Sophia Isabel ke ra ree,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,18
+695,Tatenda James acha és Rudadisorwashe,yamupfilkuda,Tatenda James acha és Rudadisorwashe yamupfilkuda,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,1
+696,Malon Kanak,Bee,Malon Kanak Bee,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,2
+697,Tinotenda Fani Mazadza ea,Sibanda,Tinotenda Fani Mazadza ea Sibanda,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,43
+698,manuel Ngoni,Sibindi,manuel Ngoni Sibindi,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,79
+699,Allan Munashe,Tutayi,Allan Munashe Tutayi,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,81
+700,Lethokuhle Caroline,Wadyelens,Lethokuhle Caroline Wadyelens,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,82
+701,RR suRosemary,Motsi,RR suRosemary Motsi,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,1
+702,Osilee,Ziwande,Osilee Ziwande,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,83
+703,Willard,Zvoutete,Willard Zvoutete,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,84
+704,Takudawa,Chandomba,Takudawa Chandomba,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,1
+705,Desire Malvemt,Chapataronge,Desire Malvemt Chapataronge,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,2
+706,Molly,Chikoto,Molly Chikoto,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,3
+707,Tafadawa Annah,Chikwava,Tafadawa Annah Chikwava,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,4
+708,Bdelbert,Chirongoma,Bdelbert Chirongoma,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,5
+709,Maria,Dongeri,Maria Dongeri,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01 (2).jpeg,6
+710,Liberty Trust oe,Mat,Liberty Trust oe Mat,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,12
+711,Bukebenne,Mak,Bukebenne Mak,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,1
+712,Dine,Mak,Dine Mak,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,4
+713,Tariro,Mak,Tariro Mak,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,15
+714,Tafudzwa Gerald,enn,Tafudzwa Gerald enn,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,8
+715,Ophar Ashley,vem,Ophar Ashley vem,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,19
+716,Salvin Metusi,Kanovava,Salvin Metusi Kanovava,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,7
+717,Dongle Sea,Hoyo,Dongle Sea Hoyo,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,2
+718,Bongiwe Charmaine,Moye,Bongiwe Charmaine Moye,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,23
+719,Teenulo,Moyo,Teenulo Moyo,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,25
+720,Precious Zadzisai,Madi,Precious Zadzisai Madi,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,27
+721,Darlington,Mig,Darlington Mig,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,28
+722,Taboka,Mpofu,Taboka Mpofu,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,1
+723,Dexter,Kaskive,Dexter Kaskive,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,31
+724,Emeldah,Misciiee,Emeldah Misciiee,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,33
+725,Keisha Chishamiso,Nyakurimwa,Keisha Chishamiso Nyakurimwa,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,5
+726,Sanelisiwe,Nees,Sanelisiwe Nees,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,39
+727,Anita Tanaka,Neate,Anita Tanaka Neate,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,40
+728,Monalisa,Nkosi,Monalisa Nkosi,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,41
+729,Elizabeth,Nyon,Elizabeth Nyon,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,42
+730,Brandon Panashe,Sibanda,Brandon Panashe Sibanda,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,44
+731,William,Vundla,William Vundla,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,45
+732,Bradley RobinJunior,Change,Bradley RobinJunior Change,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,46
+733,Vimbainashe,Mumba,Vimbainashe Mumba,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,47
+734,Nomagugu,Matuty,Nomagugu Matuty,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,48
+735,Yolanda,Miilo,Yolanda Miilo,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,49
+736,Ashley,Noube,Ashley Noube,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,50
+737,Isabel Nomazuta,Nkome,Isabel Nomazuta Nkome,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,1
+738,Nomeamo,Nyathi,Nomeamo Nyathi,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,52
+739,Raymond,Sithole,Raymond Sithole,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,33
+740,Lorraine,Mathe,Lorraine Mathe,Communication and Information Science,ind oNgeig Honours Degree in Journalism 47 ‘Vimbainashe Mumba,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.01.jpeg,54
+741,Pationce,Mui,Pationce Mui,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,4
+742,Blessmore,Chiponda,Blessmore Chiponda,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,2
+743,Sinisa,Nae,Sinisa Nae,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,1
+744,ake Ph Sibusisiwe,Ndhlovy,ake Ph Sibusisiwe Ndhlovy,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,4
+745,Patience,Rugodo,Patience Rugodo,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,2
+746,Aglow Job Cunt,Simbai,Aglow Job Cunt Simbai,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,8
+747,Liliosa,Vhimis,Liliosa Vhimis,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,67
+748,Tatenda Donald,Zingoma,Tatenda Donald Zingoma,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,68
+749,es Finior,Mabika,es Finior Mabika,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,5
+750,Denis,Magomo,Denis Magomo,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,2
+751,Benevise Perfect,Chabuda,Benevise Perfect Chabuda,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,1
+752,Anesu Wayne,Chikerema,Anesu Wayne Chikerema,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,2
+753,Munashe Faith,Chikuni,Munashe Faith Chikuni,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,3
+754,Andrew,Chivandire,Andrew Chivandire,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,4
+755,Takudzwa,Dimikira,Takudzwa Dimikira,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,5
+756,Samukelisiwe,Dube,Samukelisiwe Dube,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,6
+757,Praymore,Gama,Praymore Gama,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,8
+758,Kudakwashe,Mupurisa,Kudakwashe Mupurisa,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,12
+759,Nyaradzo Belinda,Mpofu,Nyaradzo Belinda Mpofu,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,15
+760,Patience Febbie,---Mushonga,Patience Febbie ---Mushonga,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,16
+761,Glen Aubrey,Zephen,Glen Aubrey Zephen,Business and Economic Sciences,of Commerce Honours Degree in pp Tatenda A,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (1).jpeg,31
+762,Migdawa sinibiyo CN,pachel,Migdawa sinibiyo CN pachel,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,5
+763,Sl,Dera,Sl Dera,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,10
+764,Shawn Takudzwe,cual,Shawn Takudzwe cual,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,3
+765,Sarah Tsits,Dongo,Sarah Tsits Dongo,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,11
+766,tafira Christopher,Dzine,tafira Christopher Dzine,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,12
+767,Martha aes ee ai,Jamela,Martha aes ee ai Jamela,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,3
+768,Timmukudze,Kandi,Timmukudze Kandi,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,10
+769,Takudzwa,Terrence,Takudzwa Terrence,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,11
+770,George,Secret,George Secret,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,20
+771,Nomeebo,Mathut,Nomeebo Mathut,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,22
+772,Trymore bea,Inkosiilokuthula,Trymore bea Inkosiilokuthula,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,7
+773,Zivisai Junior,Mavesere,Zivisai Junior Mavesere,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,23
+774,Thabo eri,Michael,Thabo eri Michael,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,19
+775,Andrew Tanatswa,Mhenyu,Andrew Tanatswa Mhenyu,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,24
+776,Abihail Mathibela Moyo,Nigel,Abihail Mathibela Moyo Nigel,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,21
+777,Ropafadzo Pumzile,Mambo,Ropafadzo Pumzile Mambo,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,25
+778,Revie Dadirai,Muleswa,Revie Dadirai Muleswa,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,2
+779,Cleopatra Nyasha,Motoko,Cleopatra Nyasha Motoko,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,26
+780,Andrew,Moyo,Andrew Moyo,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,27
+781,Amanda,Ncube,Amanda Ncube,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,71
+782,Nyasha Winston,Muringisi,Nyasha Winston Muringisi,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,29
+783,Tsungai Rumbidzai,Murombedi,Tsungai Rumbidzai Murombedi,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,30
+784,Amanda Nozipho,Ndlovu,Amanda Nozipho Ndlovu,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,29
+785,Lynett,Musemwa,Lynett Musemwa,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,3
+786,Faith,Ndlovu,Faith Ndlovu,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,30
+787,Tadiwanashe,Musiwedzing,Tadiwanashe Musiwedzing,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,32
+788,Thembalikayise -Ndlovu,Bvidence,Thembalikayise -Ndlovu Bvidence,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,31
+789,Lloyd Tatenda,siviwe,Lloyd Tatenda siviwe,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,33
+790,Sophie,Nemashakwe,Sophie Nemashakwe,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,32
+791,Rustendo Janet Shoko ne ious,cul,Rustendo Janet Shoko ne ious cul,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,34
+792,Gugulethy,Sibanda,Gugulethy Sibanda,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,35
+793,Jabulile Sibanda Po scorns,Ncube,Jabulile Sibanda Po scorns Ncube,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,36
+794,Noel,Sibands,Noel Sibands,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,37
+795,Henao,Ncube,Henao Ncube,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,38
+796,Nomthandazo Sibanda Kwandumusa,Ndlovu,Nomthandazo Sibanda Kwandumusa Ndlovu,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,38
+797,Nicole Tahuma jo,Trinity,Nicole Tahuma jo Trinity,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,39
+798,Jefrey,Tevaki,Jefrey Tevaki,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,40
+799,QMesi aKgotso,Ngwenya,QMesi aKgotso Ngwenya,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,40
+800,Tatkwell Takudewa,Zimuto,Tatkwell Takudewa Zimuto,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,41
+801,Tee,Ruka,Tee Ruka,Business and Economic Sciences,merce Honours Degree in iy Nol,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (2).jpeg,43
+802,Pana Chi,fakasi,Pana Chi fakasi,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02 (3).jpeg,13
+803,Inani,Immac,Inani Immac,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02 (3).jpeg,29
+804,Tadiwa,Tengemi,Tadiwa Tengemi,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,17
+805,Pal eree,Degr,Pal eree Degr,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,3
+806,Roy Taira,pete,Roy Taira pete,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,12
+807,Tad Samuel,Chari,Tad Samuel Chari,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,1
+808,ene Matidaish,Mawonedz,ene Matidaish Mawonedz,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,13
+809,bes Ropafadzo,Chirasvure,bes Ropafadzo Chirasvure,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,5
+810,joke Banyan,Ngomani,joke Banyan Ngomani,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,3
+811,Katheko,Chiwa,Katheko Chiwa,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,6
+812,eas Thulani New enya Richard le,Choto,eas Thulani New enya Richard le Choto,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,19
+813,Ropafidzo Emil osi Sibanda eee,Dae,Ropafidzo Emil osi Sibanda eee Dae,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,24
+814,Mancina Ticharwa ealey Terersi,Neve,Mancina Ticharwa ealey Terersi Neve,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,2
+815,Vongai,Migge,Vongai Migge,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,28
+816,Prisca Tinot,Mangweng,Prisca Tinot Mangweng,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,18
+817,Clarice Sibusiso,Nov,Clarice Sibusiso Nov,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,36
+818,Wisdom,Dema,Wisdom Dema,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,1
+819,Masimpe,Ndlovu,Masimpe Ndlovu,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,27
+820,tans Gasya Siambuyu,Denzel,tans Gasya Siambuyu Denzel,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,2
+821,Tendai Hove,Ndlovu,Tendai Hove Ndlovu,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,4
+822,Shamiso Madobi Shelter,Nicene,Shamiso Madobi Shelter Nicene,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,5
+823,Praise,Mopurmoga,Praise Mopurmoga,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,7
+824,Tinashe Fisher,Nyame,Tinashe Fisher Nyame,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,31
+825,Mishelyn,Nyasha,Mishelyn Nyasha,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,8
+826,Proud Vue,Rina,Proud Vue Rina,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,32
+827,Panashe Emmanuel,Meno,Panashe Emmanuel Meno,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,9
+828,Zivanai,Nathan,Zivanai Nathan,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,10
+829,Busiso Mengezeli,Sibanda,Busiso Mengezeli Sibanda,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,4
+830,Sharmaine Panashe,Sibanda,Sharmaine Panashe Sibanda,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,35
+831,Princess,Mudzonga,Princess Mudzonga,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,11
+832,Chidochemoye,Siziba,Chidochemoye Siziba,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,36
+833,Primrose,Tshaba,Primrose Tshaba,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,38
+834,Bhekinkosi,Tshabangu,Bhekinkosi Tshabangu,Business and Economic Sciences,‘ -ce Honours Degree in 23. Daryl Tanatswa we,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.02.jpeg,39
+835,Coen Dube,mony,Coen Dube mony,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,1
+836,Tatenda,Fakama,Tatenda Fakama,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,2
+837,Rumbidza,Ganye,Rumbidza Ganye,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,13
+838,phutho Denzel Godzi Juliet,Goto,phutho Denzel Godzi Juliet Goto,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,2
+839,Rodaly,Kura,Rodaly Kura,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,16
+840,Kitestone,Pua,Kitestone Pua,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,1
+841,Chine Lynnet,Sireu,Chine Lynnet Sireu,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,2
+842,Helen Kundai,Site,Helen Kundai Site,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,1
+843,Emilia Muwoni aa ina,Makanda,Emilia Muwoni aa ina Makanda,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,4
+844,Memory Tinashe,Manyokw,Memory Tinashe Manyokw,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,7
+845,Nkululeko Sibanda BA ne Matele,Mayo,Nkululeko Sibanda BA ne Matele Mayo,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,7
+846,Phillipah Mazviita,Matanhire,Phillipah Mazviita Matanhire,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,30
+847,Racheal,Madimba,Racheal Madimba,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,37
+848,Innocent,Moyo,Innocent Moyo,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,5
+849,Shyline,Mudyiwa,Shyline Mudyiwa,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,38
+850,Takunda,Mudzviti,Takunda Mudzviti,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,39
+851,Davison Nyasha,Mugarisanwa,Davison Nyasha Mugarisanwa,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,40
+852,Racheal Naomi,Mujumi,Racheal Naomi Mujumi,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,41
+853,Brian Nyagwaya,Zvikomborero,Brian Nyagwaya Zvikomborero,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,4
+854,Adellaide Vongai,Mukandakanda,Adellaide Vongai Mukandakanda,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,42
+855,Enery Yolanda,Mukungunurwa,Enery Yolanda Mukungunurwa,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,43
+856,Tanaka Innocent,Musundire,Tanaka Innocent Musundire,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,44
+857,Tinashe Donald,Mutebuka,Tinashe Donald Mutebuka,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,45
+858,Talent,Mutembedzi,Talent Mutembedzi,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,46
+859,Newton,Muwehaliti,Newton Muwehaliti,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,47
+860,Nkosiyabo,Ncube,Nkosiyabo Ncube,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,48
+861,Nosicelo,Noube,Nosicelo Noube,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,49
+862,Buhlebenkos,Ndebele,Buhlebenkos Ndebele,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,50
+863,Valerie,Nomgele-Ndou,Valerie Nomgele-Ndou,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,1
+864,besten Felistas,Chamisa,besten Felistas Chamisa,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,2
+865,Ashley,Newry,Ashley Newry,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,52
+866,Abigail,Nleya,Abigail Nleya,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,53
+867,Ra,Chawatama,Ra Chawatama,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,40
+868,Taonga,Roshiwe,Taonga Roshiwe,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,55
+869,ulsawashe Sharon,Chishaka,ulsawashe Sharon Chishaka,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,5
+870,Moreblessing,Silape,Moreblessing Silape,Business and Economic Sciences,J Ipscience Degree in Banking and Financial 10. she) SCraduation,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (1).jpeg,59
+871,Dorris,Nyakabawc,Dorris Nyakabawc,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,8
+872,Kenmedy Tatene,ambuko,Kenmedy Tatene ambuko,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,2
+873,Noble Taiweron,Munwit,Noble Taiweron Munwit,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,63
+874,ree in Risk,Managemen,ree in Risk Managemen,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,10
+875,Hassan,Dlamini,Hassan Dlamini,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+876,Patience ha,Dandi,Patience ha Dandi,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+877,Gono Brian Panas,Kumalo,Gono Brian Panas Kumalo,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,0
+878,Monalisa Rope,Goredema,Monalisa Rope Goredema,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,5
+879,Maggie,Mambudzi,Maggie Mambudzi,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+880,Nyasha Karonga Trish,Marinda,Nyasha Karonga Trish Marinda,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,6
+881,Benedict aza,Nengere,Benedict aza Nengere,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,7
+882,Se,Makwara,Se Makwara,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,2
+883,Rumbidzo Makaza,ruwembus,Rumbidzo Makaza ruwembus,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,8
+884,Eye Delight,Makwerimba,Eye Delight Makwerimba,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,9
+885,Enias,Kamoto,Enias Kamoto,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,9
+886,wee Masarirevh Tatenda,ale,wee Masarirevh Tatenda ale,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,2
+887,Lesen,Verenga,Lesen Verenga,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,12
+888,Sithembinkosi,Diana,Sithembinkosi Diana,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,4
+889,Teadwanaste of Seence in Straten,Nar,Teadwanaste of Seence in Straten Nar,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,19
+890,Florence,Chibatamoto,Florence Chibatamoto,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,1
+891,Staben,Takavadint,Staben Takavadint,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,21
+892,Nobuhle,Dube,Nobuhle Dube,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,2
+893,Tatenda mn Bee,Kamba,Tatenda mn Bee Kamba,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,22
+894,PinieelTatenda,Chavuraya,PinieelTatenda Chavuraya,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+895,Faith,Mudyawabikws,Faith Mudyawabikws,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,4
+896,Goto Zanele,Ncube,Goto Zanele Ncube,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,19
+897,Tryphine,Ngwenya,Tryphine Ngwenya,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,6
+898,Vimbai Blessings,Njerere,Vimbai Blessings Njerere,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,7
+899,Dudzai,Nyakudanga,Dudzai Nyakudanga,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,8
+900,Munashe,Bozhiwa,Munashe Bozhiwa,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,1
+901,Nonkanyiso,Nyathi,Nonkanyiso Nyathi,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,9
+902,Ayibongwe Eclon,Siziba,Ayibongwe Eclon Siziba,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,10
+903,Bongai Levine,Mubonesi,Bongai Levine Mubonesi,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+904,Krystle,Williams,Krystle Williams,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,1
+905,Feith Moreblessings,Ndhlovu,Feith Moreblessings Ndhlovu,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,4
+906,Mavis,Rwodzi,Mavis Rwodzi,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,5
+907,Ransom Blessing Mahaka,mast,Ransom Blessing Mahaka mast,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,2
+908,Normally,Maja,Normally Maja,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,3
+909,Iyllety Aleta,Makomeke,Iyllety Aleta Makomeke,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,4
+910,Deborah,Tigere,Deborah Tigere,Business and Economic Sciences,"19, Teadwanaste = Master of Seence Degree in Straten Nar",,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03 (2).jpeg,1
+911,Vietor Tendai,pce,Vietor Tendai pce,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,37
+912,Alec,Pieces,Alec Pieces,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,32
+913,Monatisa Lungile,Ngwenya,Monatisa Lungile Ngwenya,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,36
+914,Michael one sy Ntombikayise Edith,Ngwenya,Michael one sy Ntombikayise Edith Ngwenya,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,1
+915,Trymore preeot oF Francine Hlengiwe,Nkomo,Trymore preeot oF Francine Hlengiwe Nkomo,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,2
+916,Sarudzai lakamu Nyashai,Peyani,Sarudzai lakamu Nyashai Peyani,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,3
+917,Caroline Nyarayi Mapfidza nal Rags,Sibanda,Caroline Nyarayi Mapfidza nal Rags Sibanda,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,4
+918,Munashe Patrick,Siziba,Munashe Patrick Siziba,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,31
+919,Betina Nyamupachitu Matimba,eee,Betina Nyamupachitu Matimba eee,Business and Economic Sciences,Programme not reliably resolved,,graduate,review,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,6
+920,Sarah-Donna,Maulana,Sarah-Donna Maulana,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,7
+921,Nyas,Fate,Nyas Fate,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,32
+922,Lucky,Magombedze,Lucky Magombedze,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,33
+923,Rindra,Razanatovo,Rindra Razanatovo,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,9
+924,Priscilla,Chiku,Priscilla Chiku,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,1
+925,Tafadzwa Susan,Chingozho,Tafadzwa Susan Chingozho,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,2
+926,Ruth Hazvinei,Gondo,Ruth Hazvinei Gondo,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,3
+927,Malvern,Mhlanga,Malvern Mhlanga,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,4
+928,Pafunge,Muronzi,Pafunge Muronzi,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,5
+929,Witness,Kufa,Witness Kufa,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,1
+930,Doris Christelle,Muzondo,Doris Christelle Muzondo,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,6
+931,Felistus Muteta,Isheanotida,Felistus Muteta Isheanotida,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,2
+932,Emmanuel,Ndaba,Emmanuel Ndaba,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,3
+933,Fyrence,Ndebele,Fyrence Ndebele,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,7
+934,Chamunorwa,Mufuna,Chamunorwa Mufuna,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,4
+935,Nontokozo,Ndhlovu,Nontokozo Ndhlovu,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,8
+936,Tarisai Mabel,Negonde,Tarisai Mabel Negonde,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,5
+937,Lewis,Nyathi,Lewis Nyathi,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,9
+938,Bongani Ndhlovu,Yalal,Bongani Ndhlovu Yalal,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,10
+939,Cynthia,Akiobi,Cynthia Akiobi,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,1
+940,Racheal,Chakesyoke,Racheal Chakesyoke,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,3
+941,Terence,Chigodora,Terence Chigodora,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,1
+942,Wonderful Dube,Chizhande,Wonderful Dube Chizhande,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,4
+943,Kudakwashe,Gandiwa,Kudakwashe Gandiwa,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,3
+944,Phindile Tamia,Gosha,Phindile Tamia Gosha,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,5
+945,Shephard,Kahungwa,Shephard Kahungwa,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,4
+946,Aisha Sipiwe,Mabika,Aisha Sipiwe Mabika,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,5
+947,Kudzai Yolandsh,Jana,Kudzai Yolandsh Jana,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,7
+948,Lennin,Mochiri,Lennin Mochiri,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,6
+949,Limited Tati Dumisile,Mahoko,Limited Tati Dumisile Mahoko,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,8
+950,Maty-Michelle,Manda,Maty-Michelle Manda,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,8
+951,Amold,Karimagoko,Amold Karimagoko,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.03.jpeg,12
+952,Dr Emmerson Dambudzo,Mnangagye,Dr Emmerson Dambudzo Mnangagye,Business and Economic Sciences,Programme not reliably resolved,,graduate,high,WhatsApp Image 2026-09-19 at 12.44.04.jpeg,4
