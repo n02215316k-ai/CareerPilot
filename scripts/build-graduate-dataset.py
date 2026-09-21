@@ -3,7 +3,7 @@ from collections import Counter, defaultdict
 import csv, json, re
 
 root = Path(__file__).resolve().parents[1]
-ocr_dir = root / "output" / "booklet-ocr"
+ocr_dirs = [root / "output" / "booklet-column-ocr", root / "output" / "booklet-column-ocr-11"]
 public_dir = root / "public" / "graduate-insights"
 public_dir.mkdir(parents=True, exist_ok=True)
 
@@ -25,7 +25,7 @@ def faculty_for(name):
 
 bad_words = {"name", "surname", "gender", "prize", "prizes", "awarded", "graduation", "ceremony", "faculty", "bachelor", "master", "degree", "honours"}
 rows = []
-for file in sorted(ocr_dir.glob("*.txt")):
+for file in sorted(file for directory in ocr_dirs for file in directory.glob("*.txt")):
     name = file.name
     if not ("12.43.4" in name or "12.43.5" in name or "12.44.0" in name):
         continue
@@ -62,7 +62,7 @@ for file in sorted(ocr_dir.glob("*.txt")):
                 "gender": "",
                 "record_type": "graduate",
                 "ocr_confidence": confidence,
-                "source_image": name.replace(".txt", ".jpeg"),
+                "source_image": name.split("__c", 1)[0] + ".jpeg",
                 "source_row_number": match.group(1),
             })
 
@@ -85,6 +85,8 @@ faculty_counts = Counter(row["faculty"] for row in rows)
 surnames = Counter(row["surname"].title() for row in rows if row["ocr_confidence"] == "high")
 confidence = Counter(row["ocr_confidence"] for row in rows)
 metrics = {
+    "official_total": 2570,
+    "official_stem_share": 68,
     "records": len(rows),
     "high_confidence": confidence["high"],
     "review_required": confidence["review"],
