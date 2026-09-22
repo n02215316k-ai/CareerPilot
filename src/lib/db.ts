@@ -102,6 +102,12 @@ async function ensureSchema() {
     );
 
     create index if not exists job_sync_runs_source_finished_idx on job_sync_runs (source, finished_at desc);
+
+    create table if not exists page_view_counters (
+      page_key text primary key,
+      view_count bigint not null default 0,
+      updated_at timestamptz not null default now()
+    );
   `).then(() => undefined);
 
   return globalForDb.careerPilotSchema;
@@ -110,6 +116,26 @@ async function ensureSchema() {
 export async function query<T extends QueryResultRow>(text: string, values: QueryValue[] = []) {
   await ensureSchema();
   return pool().query<T>(text, values);
+}
+
+export async function incrementPageViews(pageKey: string): Promise<number> {
+  const result = await query<{ view_count: string }>(
+    `insert into page_view_counters (page_key, view_count)
+     values ($1, 1)
+     on conflict (page_key) do update
+     set view_count = page_view_counters.view_count + 1, updated_at = now()
+     returning view_count`,
+    [pageKey],
+  );
+  return Number(result.rows[0]?.view_count || 0);
+}
+
+export async function getPageViews(pageKey: string): Promise<number> {
+  const result = await query<{ view_count: string }>(
+    "select view_count from page_view_counters where page_key = $1",
+    [pageKey],
+  );
+  return Number(result.rows[0]?.view_count || 0);
 }
 
 export async function createUser(email: string, passwordHash: string) {
