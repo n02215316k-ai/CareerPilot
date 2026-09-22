@@ -255,12 +255,6 @@ def main():
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "data.json").write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    for source, target in ((SECTION_B, OUT / "awards-and-distinctions.csv"), (SECTION_C, OUT / "graduates.csv")):
-        target.write_bytes(source.read_bytes())
-    with (OUT / "programme-analysis.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=programme_rows[0].keys())
-        writer.writeheader()
-        writer.writerows(sorted(programme_rows, key=lambda row: -row["graduates"]))
     print(json.dumps({key: result[key] for key in ("graduate_records", "programme_families", "masters", "prizes", "first_divisions", "distinctions", "vacancy_sample")}, indent=2))
 
 
