@@ -1,89 +1,48 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Download, Search, ShieldCheck, TriangleAlert, UsersRound } from "lucide-react";
+import { Award, Download, GraduationCap, Search, TrendingUp, UsersRound } from "lucide-react";
 import styles from "./graduate-insights.module.css";
 
-type Row = { record_id: number; full_name: string; given_names: string; surname: string; faculty: string; programme: string; ocr_confidence: "high" | "review"; source_image: string; source_row_number: string };
-type Datum = { name: string; value: number };
-type Dataset = { official_total: number; official_stem_share: number; records: number; high_confidence: number; review_required: number; faculty_counts: Datum[]; top_surnames: Datum[]; rows: Row[] };
+type Programme = { programme:string; faculty:string; cluster:string; graduates:number; vacancies:number; vacancies_per_100_graduates:number; observed_pressure_gap:number; recipients:number; prizes:number; first_divisions:number; distinctions:number; female:number; male:number };
+type Faculty = { faculty:string; full_faculty:string; graduates:number; undergraduate:number; postgraduate:number; programmes:number; recipients:number; prizes:number; first_divisions:number; distinctions:number; female:number; male:number };
+type Market = { cluster:string; vacancies:number; graduates:number; vacancies_per_100_graduates:number|null; observed_pressure_gap:number };
+type Master = { programme:string; graduates:number; prizes:number; distinctions:number };
+type PrizePerson = { name:string; gender:string; faculty:string; programme:string; prizes:number };
+type Data = { generated_at:string; headline_reported_total:number; graduate_records:number; record_difference:number; faculties:number; programme_families:number; degree_programmes:number; postgraduates:number; masters:number; doctorates:number; award_records:number; prize_recipients:number; prizes:number; first_divisions:number; distinctions:number; award_gender:Record<string,number>; award_population_gender:Record<string,number>; vacancy_sample:number; vacancy_sources:number; vacancy_date_min:string; vacancy_date_max:string; faculty_rows:Faculty[]; programme_rows:Programme[]; qualification_levels:{name:string;value:number}[]; market_rows:Market[]; master_programmes:Master[]; top_prize_recipients:PrizePerson[]; method:{graduate_source:string;award_source:string;vacancy_sources:string[];vacancy_deduplication:string;market_model:string} };
+type View = "overview"|"programmes"|"awards"|"masters"|"market"|"method";
+const number = (value:number) => value.toLocaleString();
+const short = (value:string) => value.replace("Faculty of The ", "").replace("Faculty of ", "");
 
-const shortFaculty: Record<string, string> = {
-  "Business and Economic Sciences": "Business",
-  "Science and Technology Education": "Science Education",
-  "Communication and Information Science": "Communication",
-};
-
-export default function GraduateInsights() {
-  const [data, setData] = useState<Dataset | null>(null);
-  const [query, setQuery] = useState("");
-  const [faculty, setFaculty] = useState("All faculties");
-  const [quality, setQuality] = useState("All records");
-  const [view, setView] = useState<"overview" | "explorer" | "method">("overview");
-
-  useEffect(() => { fetch("/graduate-insights/data.json").then((r) => r.json()).then(setData); }, []);
-  const filtered = useMemo(() => !data ? [] : data.rows.filter((row) => {
-    const search = `${row.full_name} ${row.surname} ${row.faculty}`.toLowerCase();
-    return (!query || search.includes(query.toLowerCase())) && (faculty === "All faculties" || row.faculty === faculty) && (quality === "All records" || row.ocr_confidence === quality);
-  }), [data, query, faculty, quality]);
-
-  if (!data) return <main className={styles.loading}>Preparing the graduate dataset...</main>;
-  const verifiedRate = Math.round((data.high_confidence / data.records) * 100);
-  const coverageRate = Math.round((data.records / data.official_total) * 100);
-  const topFive = data.top_surnames.slice(0, 5).reduce((sum, item) => sum + item.value, 0);
-  const maxFaculty = Math.max(...data.faculty_counts.map((item) => item.value));
-
-  return <main className={styles.page}>
-    <header className={styles.header}>
-      <div><a className={styles.brand} href="/">CareerPilot <span>Research Desk</span></a><p>NUST 32nd Graduation Ceremony · 2026 booklet</p></div>
-      <a className={styles.download} href="/graduate-insights/graduates.csv" download><Download size={17}/> Download CSV</a>
-    </header>
-
-    <section className={styles.intro}>
-      <div><p className={styles.eyebrow}>Graduate intelligence</p><h1>What the graduation booklet reveals</h1><p className={styles.lede}>A searchable, auditable view of the photographed programme. Every row links back to its source image and carries an extraction-quality flag.</p></div>
-      <div className={styles.coverage}><span>{coverageRate}%</span><p>of the official cohort recovered as rows</p><div><i style={{width: `${coverageRate}%`}} /></div></div>
-    </section>
-
-    <nav className={styles.tabs} aria-label="Analysis views">
-      {(["overview", "explorer", "method"] as const).map((item) => <button key={item} onClick={() => setView(item)} className={view === item ? styles.active : ""}>{item === "method" ? "Method & caveats" : item}</button>)}
-    </nav>
-
-    {view === "overview" && <>
-      <section className={styles.metrics}>
-        <article><UsersRound/><p>Official cohort</p><strong>{data.official_total.toLocaleString()}</strong><small>graduates capped at the 32nd ceremony</small></article>
-        <article><ShieldCheck/><p>Recovered from images</p><strong>{data.records.toLocaleString()}</strong><small>{coverageRate}% coverage; {verifiedRate}% structurally clean</small></article>
-        <article><TriangleAlert/><p>Manual review queue</p><strong>{data.review_required.toLocaleString()}</strong><small>retained, never silently discarded</small></article>
-      </section>
-
-      <section className={styles.grid}>
-        <article className={styles.panel}><div className={styles.panelHead}><div><p className={styles.kicker}>Recovered sample</p><h2>Captured rows by faculty</h2></div><span>not official totals</span></div>
-          <div className={styles.bars}>{data.faculty_counts.map((item, index) => <button key={item.name} onClick={() => {setFaculty(item.name); setView("explorer")}} title={`Explore ${item.name}`}><span>{shortFaculty[item.name] || item.name}</span><i><b style={{width: `${item.value / maxFaculty * 100}%`, background: `var(--chart-${index % 4})`}} /></i><strong>{item.value}</strong></button>)}</div>
-        </article>
-        <article className={styles.panel}><div className={styles.panelHead}><div><p className={styles.kicker}>Name ecology</p><h2>Most frequent surnames</h2></div><span>high-confidence only</span></div>
-          <div className={styles.surnames}>{data.top_surnames.map((item, index) => <button key={item.name} onClick={() => {setQuery(item.name); setView("explorer")}} style={{fontSize: `${Math.max(13, 13 + item.value / 5)}px`}}><span>{item.name}</span><b>{item.value}</b></button>)}</div>
-        </article>
-      </section>
-
-      <section className={styles.findings}>
-        <div><p className={styles.kicker}>Signals beneath the surface</p><h2>Five findings worth investigating</h2></div>
-        <ol>
-          <li><b>The official cohort is 2,570.</b><span>{data.records} names are currently searchable, giving {coverageRate}% row-level coverage. Missing OCR rows are not treated as absent graduates.</span></li>
-          <li><b>STEM dominates the full cohort.</b><span>{data.official_stem_share}% of graduands received STEM qualifications, according to the published ceremony report.</span></li>
-          <li><b>A small surname set recurs heavily.</b><span>The five most common normalized surnames account for {topFive} high-confidence records, useful for entity matching but not evidence of family relationships.</span></li>
-          <li><b>OCR errors are systematic.</b><span>Curved pages disproportionately alter initials and common surnames; confidence drops at gutters, edges and multi-column transitions.</span></li>
-          <li><b>The booklet is analytically split.</b><span>Awards pages include gender and prizes, while the full graduate lists omit gender. Gender parity cannot be inferred from the full cohort without another source.</span></li>
-        </ol>
-      </section>
-    </>}
-
-    {view === "explorer" && <section className={styles.explorer}>
-      <div className={styles.controls}><label><Search/><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a name or surname"/></label><select value={faculty} onChange={(e) => setFaculty(e.target.value)}><option>All faculties</option>{data.faculty_counts.map((item) => <option key={item.name}>{item.name}</option>)}</select><select value={quality} onChange={(e) => setQuality(e.target.value)}><option>All records</option><option value="high">High confidence</option><option value="review">Needs review</option></select></div>
-      <div className={styles.resultLine}><strong>{filtered.length}</strong> matching recovered records <button onClick={() => {setQuery("");setFaculty("All faculties");setQuality("All records")}}>Clear filters</button></div>
-      <div className={styles.tableWrap}><table><thead><tr><th>Name</th><th>Faculty</th><th>Quality</th><th>Source row</th></tr></thead><tbody>{filtered.slice(0, 300).map((row) => <tr key={row.record_id}><td><b>{row.full_name}</b><small>{row.surname}</small></td><td>{row.faculty}</td><td><span className={row.ocr_confidence === "high" ? styles.good : styles.review}>{row.ocr_confidence === "high" ? "High" : "Review"}</span></td><td><code>{row.source_row_number}</code><small>{row.source_image}</small></td></tr>)}</tbody></table>{filtered.length > 300 && <p className={styles.limit}>Showing the first 300 matches. Download the CSV for all rows.</p>}</div>
-    </section>}
-
-    {view === "method" && <section className={styles.method}><article><p className={styles.kicker}>Scope</p><h2>2,570 official graduates</h2><p>The official ceremony total is 2,570. The downloadable CSV contains {data.records} OCR-recovered names from 99 phone photographs, not the complete official register. The coverage gap is shown explicitly throughout this page.</p></article><article><p className={styles.kicker}>Important limitation</p><h2>Do not use as an official register</h2><p>Page curvature, faint print, bleed-through and two-column layouts mean some people are missing or misspelled. “High confidence” means the row passed extraction checks, not that it was independently verified against university records.</p></article><article><p className={styles.kicker}>Responsible analysis</p><h2>No inferred demographics</h2><p>Gender is blank in the full list and was not guessed from names. Shared surnames are descriptive frequencies only. They do not imply ethnicity, kinship or origin.</p></article></section>}
-
-    <footer><p>CareerPilot Research Desk · Source: photographed NUST 32nd Graduation Ceremony booklet</p><a href="/">Return to CareerPilot</a></footer>
-  </main>;
+function Bars({rows, suffix=""}:{rows:{name:string;value:number}[];suffix?:string}) {
+  const max=Math.max(...rows.map(row=>row.value),1);
+  return <div className={styles.bars}>{rows.map((row,index)=><div className={styles.bar} key={row.name}><span title={row.name}>{row.name}</span><i><b style={{width:`${row.value/max*100}%`,background:`var(--chart-${index%5})`}}/></i><strong>{number(row.value)}{suffix}</strong></div>)}</div>;
 }
+
+export default function GraduateInsights(){
+  const [data,setData]=useState<Data|null>(null),[view,setView]=useState<View>("overview"),[query,setQuery]=useState(""),[faculty,setFaculty]=useState("All faculties"),[sort,setSort]=useState("graduates-desc");
+  useEffect(()=>{fetch("/graduate-insights/data.json").then(r=>r.json()).then(setData)},[]);
+  const programmes=useMemo(()=>{if(!data)return [];const rows=data.programme_rows.filter(row=>(faculty==="All faculties"||row.faculty===faculty)&&`${row.programme} ${row.cluster}`.toLowerCase().includes(query.toLowerCase()));const [key,direction]=sort.split("-") as [keyof Programme,string];return [...rows].sort((a,b)=>(Number(a[key])-Number(b[key]))*(direction==="asc"?1:-1))},[data,faculty,query,sort]);
+  if(!data)return <main className={styles.loading}>Building the corrected graduate analysis...</main>;
+  const female=data.award_gender.Female||0,male=data.award_gender.Male||0;
+  const top=data.programme_rows.slice(0,10).map(r=>({name:r.programme,value:r.graduates}));
+  const least=[...data.programme_rows].sort((a,b)=>a.graduates-b.graduates).slice(0,10).map(r=>({name:r.programme,value:r.graduates}));
+  const prizes=[...data.programme_rows].sort((a,b)=>b.prizes-a.prizes).slice(0,10).map(r=>({name:r.programme,value:r.prizes}));
+  const first=[...data.programme_rows].sort((a,b)=>b.first_divisions-a.first_divisions).slice(0,10).map(r=>({name:r.programme,value:r.first_divisions}));
+  const nav:[View,string][]=[["overview","Cohort"],["programmes","Programmes"],["awards","Awards"],["masters","Master's"],["market","Job market"],["method","Method"]];
+  return <main className={styles.page}>
+    <header className={styles.header}><div><a className={styles.brand} href="/">CareerPilot <span>Graduate Intelligence</span></a><p>NUST 32nd Graduation Ceremony · corrected analytical dataset</p></div><div className={styles.downloads}><a href="/graduate-insights/graduates.csv" download><Download size={16}/> Graduates</a><a href="/graduate-insights/programme-analysis.csv" download><Download size={16}/> Analysis</a></div></header>
+    <section className={styles.intro}><div><p className={styles.eyebrow}>2026 graduate-to-market observatory</p><h1>Degrees awarded.<br/>Demand observed.</h1><p>Explore the corrected cohort, academic performance, prize distribution, faculty output and links to 2026 Zimbabwe vacancy activity.</p></div><div className={styles.datestamp}><span>Market window</span><strong>{data.vacancy_date_min}</strong><i>to</i><strong>{data.vacancy_date_max}</strong><small>{number(data.vacancy_sample)} deduplicated postings</small></div></section>
+    <nav className={styles.tabs}>{nav.map(([key,label])=><button key={key} onClick={()=>setView(key)} className={view===key?styles.active:""}>{label}</button>)}</nav>
+    {view==="overview"&&<><section className={styles.metrics}><article><GraduationCap/><p>Graduate records</p><strong>{number(data.graduate_records)}</strong><small>{data.degree_programmes} named programmes · {data.programme_families} comparable families</small></article><article><UsersRound/><p>Postgraduate output</p><strong>{number(data.postgraduates)}</strong><small>{number(data.masters)} master’s · {data.doctorates} doctorates</small></article><article><Award/><p>Prizes recorded</p><strong>{number(data.prizes)}</strong><small>{data.prize_recipients} recipients across {data.award_records} performance records</small></article><article><TrendingUp/><p>Vacancy sample</p><strong>{number(data.vacancy_sample)}</strong><small>deduplicated postings from {data.vacancy_sources} public sources</small></article></section><section className={styles.split}><article className={styles.panel}><div className={styles.panelHead}><div><p className={styles.kicker}>Faculty output</p><h2>Business leads the cohort</h2></div><span>Graduate count</span></div><Bars rows={data.faculty_rows.map(r=>({name:r.faculty,value:r.graduates}))}/></article><article className={styles.panel}><div className={styles.panelHead}><div><p className={styles.kicker}>Study level</p><h2>Undergraduate vs postgraduate</h2></div></div><div className={styles.facultyStack}>{data.faculty_rows.map(r=><div key={r.faculty}><span>{r.faculty}</span><i><b style={{width:`${r.undergraduate/r.graduates*100}%`}}/><em style={{width:`${r.postgraduate/r.graduates*100}%`}}/></i><small>{r.postgraduate} PG</small></div>)}</div><div className={styles.legend}><span><i/>Undergraduate</span><span><i/>Postgraduate</span></div></article></section><section className={styles.insights}><div><p className={styles.kicker}>Executive readout</p><h2>What stands out</h2></div><ol><li><b>Business is the largest faculty.</b><span>Its 680 graduates make up 26.4% of corrected records.</span></li><li><b>Computer Science is the largest programme family.</b><span>158 graduates span undergraduate, master’s and education routes.</span></li><li><b>Awards are concentrated.</b><span>{data.prize_recipients} people received {data.prizes} prizes, averaging {(data.prizes/data.prize_recipients).toFixed(2)} each.</span></li><li><b>Market pressure is uneven.</b><span>Sales, management and education show more observed postings per graduate than construction or bioscience.</span></li></ol></section></>}
+    {view==="programmes"&&<section className={styles.section}><Lead kicker="Programme scale" title="Largest and smallest graduating pipelines">Programme families combine the same discipline across qualification levels, avoiding fragmentation by degree wording.</Lead><div className={styles.split}><article className={styles.panel}><h3>Most graduates</h3><Bars rows={top}/></article><article className={styles.panel}><h3>Least graduates</h3><Bars rows={least}/></article></div><ProgrammeTable rows={programmes} data={data} query={query} setQuery={setQuery} faculty={faculty} setFaculty={setFaculty} sort={sort} setSort={setSort}/></section>}
+    {view==="awards"&&<section className={styles.section}><Lead kicker="Performance and recognition" title={`${data.first_divisions} first divisions and ${data.prizes} prizes`}>Gender is available for the 409 Section B performance records only. It is not inferred for the full cohort.</Lead><div className={styles.awardGrid}><article className={styles.panel}><h3>Prize-recipient gender</h3><div className={styles.gender}><div style={{background:`conic-gradient(#c1496d 0 ${female/(female+male)*100}%,#287d87 0)`}}><span>{female+male}</span><small>recipients</small></div><ul><li><i/>Female <b>{female}</b><small>{(female/(female+male)*100).toFixed(1)}%</small></li><li><i/>Male <b>{male}</b><small>{(male/(female+male)*100).toFixed(1)}%</small></li></ul></div></article><article className={styles.panel}><h3>Programmes with most prizes</h3><Bars rows={prizes}/></article><article className={styles.panel}><h3>Most first divisions</h3><Bars rows={first}/></article></div><div className={styles.tableWrap}><table><thead><tr><th>Top prize recipients</th><th>Programme</th><th>Faculty</th><th>Gender</th><th>Prizes</th></tr></thead><tbody>{data.top_prize_recipients.map(r=><tr key={r.name}><td><b>{r.name}</b></td><td>{r.programme}</td><td>{r.faculty}</td><td>{r.gender==="F"?"Female":"Male"}</td><td><strong>{r.prizes}</strong></td></tr>)}</tbody></table></div></section>}
+    {view==="masters"&&<section className={styles.section}><Lead kicker="Postgraduate lens" title={`${number(data.masters)} master’s graduates`}>The cumulative list supplies volume; matched Section B records supply prizes and distinctions.</Lead><section className={styles.metrics}><article><p>Master’s graduates</p><strong>{data.masters}</strong><small>{data.master_programmes.length} programme families</small></article><article><p>Master’s distinctions</p><strong>{data.distinctions}</strong><small>classification available in Section B</small></article><article><p>Largest master’s programme</p><strong className={styles.wordMetric}>{data.master_programmes[0].programme}</strong><small>{data.master_programmes[0].graduates} graduates</small></article></section><div className={styles.tableWrap}><table><thead><tr><th>Master’s programme</th><th>Graduates</th><th>Prizes</th><th>Distinctions</th><th>Prizes / 100</th></tr></thead><tbody>{data.master_programmes.map(r=><tr key={r.programme}><td><b>{r.programme}</b></td><td>{r.graduates}</td><td>{r.prizes}</td><td>{r.distinctions}</td><td>{(r.prizes*100/r.graduates).toFixed(1)}</td></tr>)}</tbody></table></div></section>}
+    {view==="market"&&<section className={styles.section}><Lead kicker="Observed labour demand" title="Where postings and graduate supply diverge">Postings are deduplicated and classified by title and description. Ratios indicate relative pressure, not unemployment or a national shortage count.</Lead><div className={styles.marketGrid}>{data.market_rows.map((r,i)=><article key={r.cluster}><span>{String(i+1).padStart(2,"0")}</span><h3>{r.cluster}</h3><strong>{number(r.vacancies)}</strong><small>observed vacancies</small><div><i style={{width:`${Math.min(r.vacancies_per_100_graduates||100,600)/6}%`}}/></div><p>{r.graduates?`${r.vacancies_per_100_graduates} postings / 100 graduates`:"No direct programme cluster"}</p><b className={r.observed_pressure_gap>=0?styles.positive:styles.negative}>{r.observed_pressure_gap>=0?"+":""}{r.observed_pressure_gap} pressure gap</b></article>)}</div><article className={styles.panel}><div className={styles.panelHead}><div><p className={styles.kicker}>Programme-market matrix</p><h2>Highest vacancy pressure per 100 graduates</h2></div></div><Bars rows={[...data.programme_rows].sort((a,b)=>b.vacancies_per_100_graduates-a.vacancies_per_100_graduates).slice(0,15).map(r=>({name:r.programme,value:Math.round(r.vacancies_per_100_graduates)}))}/></article></section>}
+    {view==="method"&&<section className={styles.method}><article><p className={styles.kicker}>Cohort reconciliation</p><h2>2,574 rows retained</h2><p>The corrected Section C file has {data.graduate_records} sequenced records, four more than the published {number(data.headline_reported_total)} headline. No rows were removed merely to force agreement.</p></article><article><p className={styles.kicker}>Awards scope</p><h2>409 classified records</h2><p>Gender, prizes and classifications come only from Section B. Blank classifications are not failures, and gender is never guessed.</p></article><article><p className={styles.kicker}>Vacancy scope</p><h2>{number(data.vacancy_sample)} postings</h2><p>{data.method.market_model} Sources: {data.method.vacancy_sources.join(", ")}.</p></article><article><p className={styles.kicker}>Interpretation</p><h2>Pressure, not causation</h2><p>A posting may accept several disciplines, represent repeat hiring, or remain unfilled. Use these rankings to target deeper research, not to judge programme value.</p></article></section>}
+    <footer><p>CareerPilot Research Desk · generated {new Date(data.generated_at).toLocaleDateString("en-ZW")}</p><a href="/">Return to CareerPilot</a></footer>
+  </main>
+}
+
+function Lead({kicker,title,children}:{kicker:string;title:string;children:React.ReactNode}){return <div className={styles.sectionLead}><p className={styles.kicker}>{kicker}</p><h2>{title}</h2><p>{children}</p></div>}
+function ProgrammeTable({rows,data,query,setQuery,faculty,setFaculty,sort,setSort}:{rows:Programme[];data:Data;query:string;setQuery:(v:string)=>void;faculty:string;setFaculty:(v:string)=>void;sort:string;setSort:(v:string)=>void}){return <div className={styles.explorer}><div className={styles.controls}><label><Search size={16}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search programme or market cluster"/></label><select value={faculty} onChange={e=>setFaculty(e.target.value)}><option>All faculties</option>{data.faculty_rows.map(r=><option key={r.full_faculty}>{r.full_faculty}</option>)}</select><select value={sort} onChange={e=>setSort(e.target.value)}><option value="graduates-desc">Most graduates</option><option value="graduates-asc">Least graduates</option><option value="prizes-desc">Most prizes</option><option value="first_divisions-desc">Most first divisions</option><option value="vacancies_per_100_graduates-desc">Highest market pressure</option></select></div><p className={styles.resultLine}>{rows.length} programme families</p><div className={styles.tableWrap}><table><thead><tr><th>Programme</th><th>Faculty</th><th>Graduates</th><th>First divisions</th><th>Prizes</th><th>Market cluster</th><th>Vacancies / 100</th></tr></thead><tbody>{rows.map(r=><tr key={`${r.faculty}-${r.programme}`}><td><b>{r.programme}</b></td><td>{short(r.faculty)}</td><td>{r.graduates}</td><td>{r.first_divisions}</td><td>{r.prizes}</td><td>{r.cluster}</td><td><strong>{r.vacancies_per_100_graduates}</strong></td></tr>)}</tbody></table></div></div>}
